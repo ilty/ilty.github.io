@@ -1,0 +1,12 @@
+- name: PHP
+  percentage: 85
+
+- name: HTML/CSS
+  percentage: 65
+
+- name: Linux/Shell
+  percentage: 55
+
+- name: jQuery
+  percentage: 80
+
