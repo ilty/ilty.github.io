@@ -4,6 +4,9 @@
 - name: Python
   href: '/python/'
 
+- name: Wechat
+  href: '/wechat/'
+
 - name: PHP
   href: '/php/'
 
