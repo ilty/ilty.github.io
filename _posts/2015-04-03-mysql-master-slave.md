@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "MySQL主备模式配置"
+title:  "MySQL主从模式配置"
 date:   2015-04-03
-desc: "MySQL主备模式配置"
+desc: "MySQL主从模式配置"
 keywords: "linux,mysql,master,slave,主备"
 categories: [Database]
 tags: [MySQL, 主从]

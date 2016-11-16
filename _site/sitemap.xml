@@ -86,10 +86,6 @@
     </url>
 
     <url>
-        <loc>http://www.ltybr.com//life/2015/10/04/sabah-travel.html</loc>
-    </url>
-
-    <url>
         <loc>http://www.ltybr.com//linux/2015/09/30/rsync.html</loc>
     </url>
 
@@ -146,7 +142,7 @@
     </url>
 
     <url>
-        <loc>http://www.ltybr.com//php/2015/01/13/phpfirstmo.html</loc>
+        <loc>http://www.ltybr.com//wechat/2015/01/13/weipay.html</loc>
     </url>
 
     <url>
@@ -154,7 +150,31 @@
     </url>
 
     <url>
-        <loc>http://www.ltybr.com//life/2015/01/08/first-blog-2.html</loc>
+        <loc>http://www.ltybr.com//framework/2014/10/13/websafe.html</loc>
+    </url>
+
+    <url>
+        <loc>http://www.ltybr.com//framework/2014/10/13/userpas.html</loc>
+    </url>
+
+    <url>
+        <loc>http://www.ltybr.com//php/2014/05/25/phpthreemo.html</loc>
+    </url>
+
+    <url>
+        <loc>http://www.ltybr.com//framework/2014/05/20/mysql-master-slave.html</loc>
+    </url>
+
+    <url>
+        <loc>http://www.ltybr.com//php/2014/05/20/phptwomo2.html</loc>
+    </url>
+
+    <url>
+        <loc>http://www.ltybr.com//php/2014/05/16/phptwomo.html</loc>
+    </url>
+
+    <url>
+        <loc>http://www.ltybr.com//php/2014/05/10/phpfirstmo.html</loc>
     </url>
 
 
@@ -176,6 +196,10 @@
 
     <url>
         <loc>http://www.ltybr.com//feed.xml</loc>
+    </url>
+
+    <url>
+        <loc>http://www.ltybr.com//framework/</loc>
     </url>
 
     <url>
@@ -212,6 +236,10 @@
 
     <url>
         <loc>http://www.ltybr.com//sitemap.xml</loc>
+    </url>
+
+    <url>
+        <loc>http://www.ltybr.com//wechat/</loc>
     </url>
 
 </urlset>

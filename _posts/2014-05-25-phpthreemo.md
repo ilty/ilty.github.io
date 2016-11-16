@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "PHP学习第三个月"
-date:   2015-01-20
+title:  "PHP学习<4>"
+date:   2014-05-25
 desc: "我的php"
 keywords: "php,面上对象"
 categories: [php]

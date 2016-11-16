@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "PHP学习第一个月"
-date:   2015-01-13
+title:  "PHP总结<1>"
+date:   2014-05-10
 desc: "我的php"
 keywords: "php,mysql,pdo,session,cookie,navicat操作,搜索"
 categories: [php]

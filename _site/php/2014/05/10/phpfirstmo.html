@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+
+	
+	    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <meta content="我的php" name="description">
+  
+  
+    <meta name="keywords" content="php,mysql,pdo,session,cookie,navicat操作,搜索">
+  
+  <meta name="author" content="Li">
+
+  <title>
+    
+        LTY|PHP总结<1>
+    
+  </title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="/static/img/1616.ico">
+
+  <!-- Third-party CSS -->
+  <link href="/bower_components/normalize-css/normalize.min.css" rel="stylesheet">
+  <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/bower_components/animate.css/animate.min.css" rel="stylesheet">
+  <link href="/bower_components/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/static/font-mfizz/font-mfizz.css" rel="stylesheet">
+  <!-- <link href="/bower_components/toastr/toastr.min.css" rel="stylesheet"> -->
+  <link href="/bower_components/jquery.gritter/css/jquery.gritter.css" rel="stylesheet">
+  <link rel="stylesheet" href="/search/css/cb-search.css">
+
+  <!-- Custom styles for this template -->
+  <link href="/static/css/style.min.css" rel="stylesheet">
+  <link href="/static/css/pygments.css" rel="stylesheet">
+
+  <!-- Scripts -->
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/search/js/bootstrap3-typeahead.min.js"></script>
+
+  <!-- cb-search -->
+  <script src="/search/js/cb-search.js"></script>
+  <script>
+    $(function(){
+        $("pre").css('display','block');
+    });
+  </script>
+  <!-- Mainly scripts -->
+  <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/bower_components/metisMenu/dist/metisMenu.min.js"></script>
+  <script src="/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+
+  <!-- Peity -->
+  <script src="/bower_components/peity/jquery.peity.min.js"></script>
+
+  <script src="/bower_components/PACE/pace.min.js"></script>
+  <script src="/bower_components/wow/dist/wow.min.js"></script>
+  <!-- Custom and plugin javascript -->
+  <script src="/static/js/inspinia.js"></script>
+
+  <!-- Rickshaw -->
+  <script src="/bower_components/rickshaw/vendor/d3.v3.js"></script>
+  <script src="/bower_components/rickshaw/rickshaw.min.js"></script>
+
+
+  <!-- jPages -->
+  <script src="/static/js/jPages.js"></script>
+  <script src="/static/js/js.js"></script>
+  <script id="dsq-count-scr" src="//jalpc.disqus.com/count.js" async></script>
+  <script type="text/javascript">
+        $(function(){
+          /* initiate the plugin */
+          $("div.pag-holder").jPages({
+              containerID  : "pag-itemContainer",
+              perPage      : 5,  /* num of items per page */
+              startPage    : 1,
+              startRange   : 1,
+              midRange     : 3,
+              endRange     : 1
+          });
+      });
+  </script>
+
+<!-- GrowingIO -->
+
+  <script>
+    var _vds = _vds || [];
+    window._vds = _vds;
+    (function(){
+      _vds.push(['setAccountId', 'a49d4901c7853da9']);
+      (function() {
+        var vds = document.createElement('script');
+        vds.type='text/javascript';
+        vds.async = true;
+        vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(vds, s);
+      })();
+    })();
+  </script>
+
+
+</head>
+
+	
+
+
+<body id="page-top" class="landing-page">
+
+	
+	    <div class="search-tool"
+      style="position: fixed; top: 0px ; bottom: 0px; left: 0px; right:  0px; opacity: 0.95; background-color: #111111; z-index: 9999; display: none;">
+    <input type="text" class="form-control search-content" id="search-content" style="position: fixed; top: 60px" placeholder="Search Blog">
+
+    <div style="position: fixed; top: 16px; right: 16px; z-index: 9999;">
+        <img src="/search/img/cb-close.png" id="close-btn"/>
+    </div>
+</div>
+
+<div style="position: fixed; right: 16px; bottom: 20px; z-index: 9999;">
+    <img src="/search/img/cb-search.png"  id="search-btn"  title="Double click Ctrl"/>
+</div>
+
+<div class="navbar-wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">LTY</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="page-scroll" href="/blog/"></a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/blog/">Blog</a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/python/">Python</a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/wechat/">Wechat</a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/php/">PHP</a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/linux/">Linux</a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/html/">HTML</a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/database/">Database</a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/framework/">Framework</a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/mac/">Mac</a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/life/">Life</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+</div>
+<div id="inSlider" class="carousel carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#inSlider" data-slide-to="0" class="active"></li>
+        <li data-target="#inSlider" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <div class="container">
+                <div class="carousel-caption">
+                </div>
+                <div class="carousel-image wow zoomIn">
+                    <!-- <img src="static/img/landing/laptop.png" alt="laptop"/> -->
+                </div>
+            </div>
+            <!-- Set background for slide in css -->
+            <div class="header-back one"></div>
+
+        </div>
+        <div class="item">
+            <div class="container">
+                <div class="carousel-caption blank">
+                </div>
+            </div>
+            <!-- Set background for slide in css -->
+            <div class="header-back two"></div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#inSlider" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#inSlider" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+	
+
+    <div class="wrapper wrapper-content  animated fadeInRight article">
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="ibox">
+                <div class="ibox-content">
+                    <div class="pull-right">
+                    	
+                        	<button class="btn btn-white btn-xs" type="button">php</button>
+                        
+                    </div>
+                    <div class="text-center article-title">
+                    <span class="text-muted"><i class="fa fa-clock-o"></i> 10 May 2014</span>
+                        <h1>
+                            PHP总结<1>
+                        </h1>
+                    </div>
+                    	<p>PDO:</p>
+
+<p>PDO常用方法：</p>
+
+<p>PDO::query()主要用于有记录结果返回的操作（PDOStatement），特别是select操作。</p>
+
+<p>PDO::exec()主要是针对没有结果集合返回的操作。如insert,update等操作。返回影响行数。</p>
+
+<p>PDO::lastInsertId()返回上次插入操作最后一条ID，但要注意：如果用insert into tb(col1,col2) values(v1,v2),(v11,v22)..的方式一次插入多条记录，lastinsertid()返回的只是第一条(v1,v2)插入时的ID,而不是最后一条记录插入的记录ID。</p>
+
+<p>PDOStatement::fetch()是用来获取一条记录。配合while来遍历。</p>
+
+<p>PDOStatement::fetchAll()是获取所有记录集到一个中。</p>
+
+<p>PDOStatement::fetchcolumn([int column_indexnum])用于直接访问列，参数column_indexnum是该列在行中的从0开始索引值，但是，这个方法一次只能取得同一行的一列，只要执行一次，就跳到下一行。因此，用于直接访问某一列时较好用，但要遍历多列就用不上。</p>
+
+<p>PDOStatement::rowcount()适用于当用query(“select …“)方法时，获取记录的条数。也可以用于预处理中。$stmt-&gt;rowcount();</p>
+
+<p>PDOStatement::columncount()适用于当用query(“select …“)方法时，获取记录的列数。</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;?php
+/*连接*/
+$dbh = new PDO('mysql:host=localhost;dbname=access_control', 'root', '');
+$dbh-&gt;setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$dbh-&gt;exec('set names utf8');
+/*添加*/
+//$sql = "INSERT INTO `user` SET `login`=:login AND `password`=:password";
+$sql = "INSERT INTO `user` (`login` ,`password`)VALUES (:login, :password)"; $stmt = $dbh-&gt;prepare($sql); $stmt-&gt;execute(array(':login'=&gt;'kevin2',':password'=&gt;''));
+echo $dbh-&gt;lastinsertid();
+/*修改*
+$sql = "UPDATE `user` SET `password`=:password WHERE `user_id`=:userId";
+$stmt = $dbh-&gt;prepare($sql);
+$stmt-&gt;execute(array(':userId'=&gt;'7', ':password'=&gt;'4607e782c4d86fd5364d7e4508bb10d9'));
+echo $stmt-&gt;rowCount();
+/*删除*/
+$sql = "DELETE FROM `user` WHERE `login` LIKE 'kevin_'"; //kevin%
+$stmt = $dbh-&gt;prepare($sql);
+$stmt-&gt;execute();
+echo $stmt-&gt;rowCount();
+/*查询*/
+$login = 'kevin%';
+$sql = "SELECT * FROM `user` WHERE `login` LIKE :login";
+$stmt = $dbh-&gt;prepare($sql);
+$stmt-&gt;execute(array(':login'=&gt;$login));
+while($row = $stmt-&gt;fetch(PDO::FETCH_ASSOC)){
+print_r($row);
+}
+print_r( $stmt-&gt;fetchAll(PDO::FETCH_ASSOC));
+?&gt;
+</code></pre>
+</div>
+
+<p>搜索高量显示：<br />
+这里提供下实现思路，具体实践，自己遇到了就会明白了<br />
+首先,要有关键字,通过关键字搜索,在搜索的最后一部可以通过循环吧所显示的某一个字段替换,就是把我们的遍历的字段在加入一个替换颜色的标签就OK啦！</p>
+
+<p>Mysqli:</p>
+
+<p>从php5.0开始增加mysql(i)支持 ,从而mysql连接就不支持了, 新加的功能都以对象的形式添加</p>
+
+<p>i表示改进的意思 功能多、效率高、稳定</p>
+
+<p>相对于mysql有很多新的特性和优势<br />
+（1）支持本地绑定、准备（prepare）等语法<br />
+（2）执行sql语句的错误代码<br />
+（3）同时执行多个sql<br />
+（4）另外提供了面向对象的调用接口的方法。</p>
+
+<p>mysqli需要php.ini的配置文件，开启扩展编译时参数：<br />
+;extension=php_mysqli.dll将其修改为：extension=php_mysqli.dll即可。</p>
+
+<p>使用传统的面向过程的方法 php代码如下：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>    &lt;?php
+    $connect = mysqli_connect('localhost','root','','volunteer') or die('Unale to connect');
+    $sql = "select * from vol_msg";
+    $result = mysqli_query($connect,$sql);
+    while($row = mysqli_fetch_row($result)){
+    echo $row[0];
+    }
+    ?&gt;
+</code></pre>
+</div>
+
+<p>使用面向对象的方法调用接口（推荐使用）看php代码如下：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>    &lt;?php
+    //创建对象并打开连接，最后一个参数是选择的数据库名称
+    $mysqli = new mysqli('localhost','root','','volunteer');
+    //检查连接是否成功
+    if (mysqli_connect_errno()){
+    //注意mysqli_connect_error()新特性
+    die('Unable to connect!'). mysqli_connect_error();
+    }
+    $sql = "select * from vol_msg";
+    //执行sql语句，完全面向对象的
+    $result = $mysqli-&gt;query($sql);
+    while($row = $result-&gt;fetch_array()){
+    echo $row[0];
+    }
+    ?&gt;
+</code></pre>
+</div>
+
+<p>navicat 操作数据库：</p>
+
+<p>Navicat Premium是一个功能强大的第三方数据库管理工具，可以连接管理MySQL、Oracle、PostgreSQL、SQLite 及 SQL Server数据库。<br />
+提供了简单数据库管理的基本和必需功能.它支持最新的功能包括触发器、函数、视图；而且还包含导入或导出工具,让用户导入和导出数据为纯文本文件格式,包括 TXT、CSV 和 XML.</p>
+
+<p>Session与cookie:</p>
+
+<p>Session与cookie的区别：<br />
+Cookie机制采用的是客户端保存状态的方案。<br />
+Session机制采用的是服务器端保存状态的方案。<br />
+Cookie:服务器通过http响应头中加一行指令来提示浏览器生成指定的cookie。Cookie的指令一般是由浏览器通过一定指令从后台发送到浏览器当中。Cookie的内容主要包括：名字、值、过期时间、路径和域。若不设置过期时间。则表示这个cookie的生命期为浏览器会话期间。关闭浏览器期间，cookie会自动消失，在这个时候，cookie是保存在内存中，而不是硬盘中。当然这种方法一般是不常用的。反之，如果我们设置了过期时间，浏览器就会把cookie的值保存到硬盘上，即使你关闭了浏览器再重新打开也是一样的。一直到你所设定的时间结束。<br />
+Session:是一种服务器端的机制，服务器使用的是一种散列表的结构。<br />
+当程序为某个客户端创建一个session的时候，服务器首先检测客户端这个请求中是否包含了session标识（session id）,如果已经包含则说明以前客户端中包含session标识，服务器就会通过session id 把这个session检索出来，如果没有，则会重新建立一个session。session类可以在我 们访问一个浏览器或网址的时候，对他进行一定的监控，对他们的状态进行跟踪。session类将每个用户的session进行信息序列化后存储到 cookie当中。并对他进行加密，当然你还可以进行把session存储到数据库当中以此来增加安全性。但是这是要求存储到cookie当中的 session id  与数据库当中的session id 进行匹配。程序默认只在cookie当中存储session.当页面进行载入的时候，session就会将cookie是否有效的存储到session当 中。如果seseion不存在或者已经过期，那么他就会生成一个新的session,并且把它绑定到cookie当中，如果session数据存在，那么 它就会对session进行更新，同时cookie也会被更新。每次更新都会生成session_id这个值。session一旦被初始化，他就会自动运行。</p>
+
+<p>session :<br />
+启动会话函数：session_start();<br />
+通过调用 session_id()函数来访问会话ID，session_name()函数显示会话的名称，也就是php 返回给客户机的保存会话ID的cookie名称。<br />
+通过调用 session_id()函数来访问会话ID，session_name()函数显示会话的名称，也就是php 返回给客户机的保存会话ID的cookie名称。<br />
+session文件的名称是以sess_为前缀的，以session_id为结尾命名。<br />
+session_unset(); //释放当前在内存中已经创建的所有$_SESSION变量，但不删除session文件以及不释放对应的session id</p>
+
+<p>Session-php.ini:<br />
+session.save_handler=file  //session的存储方式<br />
+session.save_path=”/tmp”  (httpd等web守护进程的宿主)写权限。<br />
+session.use_cookies：默认的值是“1”，代表SessionID使用Cookie来传递，反之就是使用Query_String来传递；<br />
+session.name：这个就是SessionID储存的变量名称，可能是Cookie，也可能是Query_String来传递，默认值是“PHPSESSID”；<br />
+session.cookie_lifetime：这个代表SessionID在客户端Cookie储存的时间，默认是0，代表浏览器一关闭SessionID就作废……就是这个所以Session不能永久使用！<br />
+session.gc_maxlifetime：这个是Session数据在服务器端储存的时间，如果超过这个时间，那么Session数据就自动删除！</p>
+
+<p>Session-回收机制:<br />
+Garbage Collector 简称GC)<br />
+由于PHP的工作机制，它并没有一个daemon线程来定期的扫描Session 信息并判断其是否失效，当一个有效的请求发生时，PHP 会根据全局变量 session.gc_probability 和session.gc_divisor的值，来决定是否启用一个GC, 在默认情况下， session.gc_probability=1, session.gc_divisor =100 也就是说有1%的可能性启动GC(也就是说100个请求中只有一个gc会伴随100个中的某个请求而启动).<br />
+GC 的工作就是扫描所有的Session信息，用当前时间减去session最后修改的时间，同session.gc_maxlifetime参数进行比较，如果生存时间超过gc_maxlifetime(默认24分钟) ,就将该session文件删除。</p>
+
+<p>Mysql常用命令行操作:</p>
+
+<p>一、连接MYSQL。<br />
+格式： mysql -h主机地址 -u用户名 －p用户密码<br />
+如果是连接本地的mysql<br />
+首先在打开DOS窗口，然后进入目录 mysqlbin，再键入命令mysql -uroot -p，回车后提示你输密码，如果刚安装好MYSQL，超级用户root是没有密码的，故直接回车即可进入到MYSQL中了，MYSQL的提示符是：mysql＞</p>
+
+<p>退出MYSQL命令： exit （回车）</p>
+
+<p>二、显示命令<br />
+1、显示数据库列表。<br />
+show databases;<br />
+2、显示库中的数据表：<br />
+use mysql； ／／打开库，学过FOXBASE的一定不会陌生吧<br />
+show tables;<br />
+3、显示数据表的结构：<br />
+describe 表名;<br />
+4、建库：<br />
+create database 库名;<br />
+5、建表：<br />
+use 库名；<br />
+create table 表名 (字段设定列表)；<br />
+6、删库和删表:<br />
+drop database 库名;<br />
+drop table 表名；<br />
+7、将表中记录清空：<br />
+delete from 表名;<br />
+8、显示表中的记录：<br />
+select * from 表名;</p>
+
+<p>三、一个建库和建表以及插入数据的实例<br />
+drop database if exists school; //如果存在SCHOOL库则删除<br />
+create database school; //建立库SCHOOL<br />
+use school; //打开库SCHOOL<br />
+create table teacher //建立表TEACHER<br />
+(<br />
+id int(3) auto_increment not null primary key,<br />
+name char(10) not null,<br />
+address varchar(50) default ‘北京’,<br />
+year date<br />
+); //建表结束<br />
+//以下为插入字段<br />
+insert into teacher values(‘’,’glchengang’,’北京二中’,’1976-10-10’);<br />
+insert into teacher values(‘’,’jack’,’北京二中’,’1975-12-23’);</p>
+
+<p>注：在建表中</p>
+
+<p>（1）将ID设为长度为3的数字字段:int(3)并让它每个记录自动加一:auto_increment并不能为空:not null而且让他成为主字段primary key</p>
+
+<p>（2）将NAME设为长度为10的字符字段</p>
+
+<p>（3）将ADDRESS设为长度50的字符字段，而且缺省值为深圳。varchar和char有什么区别呢，只有等以后的文章再说了。</p>
+
+<p>（4）将YEAR设为日期字段。<br />
+如果你在mysql提示符键入上面的命令也可以，但不方便调试。你可以将以上命令原样写入一个文本文件中假设为school.sql，然后复制到c:\下，并在DOS状态进入目录\mysql\bin，然后键入以下命令：<br />
+mysql -uroot -p密码 &lt; c:\school.sql<br />
+如果成功，空出一行无任何显示；如有错误，会有提示。（以上命令已经调试，你只要将//的注释去掉即可使用）。</p>
+
+<p>EPEL版本不同，根据不同系统请自行安装。</p>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                                <h5 style="display: inline;">Tags:</h5>
+                                
+                                    <button class="btn btn-white btn-xs" type="button">epel</button>
+                                
+                        </div>
+                        <div class="col-md-6">
+                            <div class="small text-right">
+                                <h5>Stats:</h5>
+                                <div> 
+                                
+                                
+                                <i class="fa fa-comments-o"> </i> <span class='disqus-comment-count' data-disqus-url="http://www.ltybr.com//php/2014/05/10/phpfirstmo.html">0</span> comments
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- donate -->
+                            
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+    Donate
+</button>
+<div class="modal inmodal" id="myModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content animated flipInY">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">Donate Me</h4>
+                <small class="font-bold">Thanks for your support!</small>
+            </div>
+            <div class="modal-body">
+                <div class="tabbable" id="tabs-960227">
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#panel-405278" data-toggle="tab">Alipay</a>
+                        </li>
+                        <li>
+                            <a href="#panel-874705" data-toggle="tab">Wechat</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="panel-405278">
+                            <div class="text-center">
+                                <img src="/static/img/pay/alipay.png"" height="250" width="250">
+                            </div>    
+                        </div>
+                        <div class="tab-pane" id="panel-874705">
+                            <div class="text-center">
+                                <img src="/static/img/pay/wechat.png"" height="250" width="250">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+                            
+                            <br>
+                            <!-- share -->
+                            
+                                <h2>Share:</h2>
+
+<div class="bshare-custom">
+	<a title="分享到微信" class="bshare-weixin"></a>
+	<a title="分享到QQ空间" class="bshare-qzone"></a>
+	<a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+	<a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a>
+</div>
+<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=513f778e-a8f7-4c20-9ec2-d29cc2328d75&amp;pophcol=1&amp;lang=zh"></script>
+<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+                            
+                            <br>
+                            <!-- comment -->
+                            
+
+
+<div id="disqus_thread"></div>
+<script>
+/** * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS. * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */
+	/*
+	var disqus_config = function () { this.page.url = PAGE_URL;
+	// Replace PAGE_URL with your page's canonical URL variable this.page.identifier = PAGE_IDENTIFIER;
+	// Replace PAGE_IDENTIFIER with your page's unique identifier variable };
+	*/
+	(function() { // DON'T EDIT BELOW THIS LINE
+			var d = document, s = d.createElement('script');
+			s.src = '//jalpc.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+		})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+	
+	    <script src="/static/js/scroll.js"></script>
+
+<!-- Baidu analytics -->
+
+
+<!-- Google analytics -->
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-73784599-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+
+
+  <script type="text/javascript">
+    var disqusShortName = "jalpc";
+
+    var disqusPublicKey = "tj2MPaNlHMONwTH5bGDNSXyaBpW7q282MeUzh5CwcjJerNhK8Kxk3aWo7IckzTX7";
+
+    var urlArray = [];
+    $('.disqus-comment-count').each(function () {
+      var url = $(this).attr('data-disqus-url');
+      urlArray.push('link:' + url);
+    });
+    $.ajax({
+      type: 'GET',
+      url: "https://disqus.com/api/3.0/threads/set.jsonp",
+      data: { api_key: disqusPublicKey, forum : disqusShortName, thread : urlArray },
+      cache: false,
+      dataType: "jsonp",
+      success: function (result) {
+        for (var i in result.response) {
+          var count = result.response[i].posts;
+          if ( count ) {
+            $('.disqus-comment-count[data-disqus-url="' + result.response[i].link + '"]').html(count);
+          }
+        }
+      }
+    });
+</script>
+
+
+
+
+<script async src="/static/js/count_page.js"></script>
+
+	
+
+</body>
+</html>

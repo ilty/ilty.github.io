@@ -171,14 +171,6 @@
 	
     
 	{
-		"title" : "我们在沙巴 - 2015-10-04",
-		"url" : "/life/2015/10/04/sabah-travel.html"
-	}
-	
-	,
-	
-    
-	{
 		"title" : "rsync简单使用 - 2015-09-30",
 		"url" : "/linux/2015/09/30/rsync.html"
 	}
@@ -235,7 +227,7 @@
 	
     
 	{
-		"title" : "MySQL主备模式配置 - 2015-04-03",
+		"title" : "MySQL主从模式配置 - 2015-04-03",
 		"url" : "/database/2015/04/03/mysql-master-slave.html"
 	}
 	
@@ -291,8 +283,8 @@
 	
     
 	{
-		"title" : "PHP学习第一个月 - 2015-01-13",
-		"url" : "/php/2015/01/13/phpfirstmo.html"
+		"title" : "微信支付【公众号支付】 - 2015-01-13",
+		"url" : "/wechat/2015/01/13/weipay.html"
 	}
 	
 	,
@@ -307,8 +299,56 @@
 	
     
 	{
-		"title" : "我的第er篇博客 - 2015-01-08",
-		"url" : "/life/2015/01/08/first-blog-2.html"
+		"title" : "归结web网站攻击与防范   - 2014-10-13",
+		"url" : "/framework/2014/10/13/websafe.html"
+	}
+	
+	,
+	
+    
+	{
+		"title" : "常见的用户密码加密方式以及破解方法  - 2014-10-13",
+		"url" : "/framework/2014/10/13/userpas.html"
+	}
+	
+	,
+	
+    
+	{
+		"title" : "PHP学习<4> - 2014-05-25",
+		"url" : "/php/2014/05/25/phpthreemo.html"
+	}
+	
+	,
+	
+    
+	{
+		"title" : "mysql 主从复制配置 - 2014-05-20",
+		"url" : "/framework/2014/05/20/mysql-master-slave.html"
+	}
+	
+	,
+	
+    
+	{
+		"title" : "PHP学习<3> - 2014-05-20",
+		"url" : "/php/2014/05/20/phptwomo2.html"
+	}
+	
+	,
+	
+    
+	{
+		"title" : "PHP学习<2> - 2014-05-16",
+		"url" : "/php/2014/05/16/phptwomo.html"
+	}
+	
+	,
+	
+    
+	{
+		"title" : "PHP总结<1> - 2014-05-10",
+		"url" : "/php/2014/05/10/phpfirstmo.html"
 	}
 	
     

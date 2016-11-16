@@ -5,8 +5,8 @@
     <description>Jack&#39;s blog,use Jekyll and github pages.</description>
     <link>http://www.ltybr.com///</link>
     <atom:link href="http://www.ltybr.com///feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 29 Oct 2016 11:31:06 +0800</pubDate>
-    <lastBuildDate>Sat, 29 Oct 2016 11:31:06 +0800</lastBuildDate>
+    <pubDate>Wed, 16 Nov 2016 14:42:11 +0800</pubDate>
+    <lastBuildDate>Wed, 16 Nov 2016 14:42:11 +0800</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
     
       <item>
@@ -2437,7 +2437,7 @@ supervisorctl stop celery:celery-0
 &lt;/div&gt;
 
 &lt;p&gt;浏览器访问http://10.1.1.1:1222/ 还可以通过web对这些进程进行管理&lt;br /&gt;
-&lt;img src=&quot;http://www.jack003.com/static/img/blog/supervisord_celery/celery-web.jpg&quot; alt=&quot;celery&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;http://www.ltybr.com/static/img/blog/supervisord_celery/celery-web.jpg&quot; alt=&quot;celery&quot; /&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 04 Feb 2016 00:00:00 +0800</pubDate>
@@ -2577,7 +2577,7 @@ python manage.py runserver --settings=mysite.settings.local
 
 &lt;p&gt;这里我使用了test.py和product.py来区分两个不同的配置：&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://www.jack003.com/static/img/blog/django_settings/tree.jpg&quot; alt=&quot;tree&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.ltybr.com/static/img/blog/django_settings/tree.jpg&quot; alt=&quot;tree&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;先看__init__.py&lt;/p&gt;
 
@@ -2844,11 +2844,11 @@ Spark
 
 &lt;p&gt;ambari主页面如下：&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://www.jack003.com/static/img/blog/hadoop_ambari/ambari.png&quot; alt=&quot;amabri&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.ltybr.com/static/img/blog/hadoop_ambari/ambari.png&quot; alt=&quot;amabri&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;hadoop的各项配置可以按照ambari给的参考配置设定，在web端即可实现hive接口查询数据：&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://www.jack003.com/static/img/blog/hadoop_ambari/hive-web.png&quot; alt=&quot;amabri&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.ltybr.com/static/img/blog/hadoop_ambari/hive-web.png&quot; alt=&quot;amabri&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;数据录入我们是通过MySQL的select into outfile到txt文件，然后在hive中load到hadoop中，中间遇到一些坑，是MySQL一些字段的换行符，这个问题查看一下我的上一篇文章，在hive创建数据库表中，text字段可以用string替代，*int(*)换成*int即可。&lt;/p&gt;
 
@@ -2929,49 +2929,6 @@ char(13):  回车符&lt;/p&gt;
         
         
         <category>Database</category>
-        
-      </item>
-    
-      <item>
-        <title>我们在沙巴</title>
-        <description>&lt;h2 id=&quot;section&quot;&gt;沙巴美景&lt;/h2&gt;
-
-&lt;h4 id=&quot;section-1&quot;&gt;沙巴附近的海域&lt;/h4&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://www.jack003.com/static/img/blog/Malaysia_Sabah/1.jpg&quot; alt=&quot;Sabah&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;海水变成绿色的，在香蕉船上拍的照片。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://www.jack003.com/static/img/blog/Malaysia_Sabah/2.jpg&quot; alt=&quot;Sabah&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;去红树林看猴子，远处的海滩。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://www.jack003.com/static/img/blog/Malaysia_Sabah/7.jpg&quot; alt=&quot;Sabah&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;在沙巴附近小岛的沙滩游泳拍照。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://www.jack003.com/static/img/blog/Malaysia_Sabah/3.jpg&quot; alt=&quot;Sabah&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;沙巴清真寺一游&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://www.jack003.com/static/img/blog/Malaysia_Sabah/6.jpg&quot; alt=&quot;Sabah&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;其实我也看不懂书的内容&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://www.jack003.com/static/img/blog/Malaysia_Sabah/5.jpg&quot; alt=&quot;Sabah&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;哈哈&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://www.jack003.com/static/img/blog/Malaysia_Sabah/4.jpg&quot; alt=&quot;Sabah&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sun, 04 Oct 2015 00:00:00 +0800</pubDate>
-        <link>http://www.ltybr.com///life/2015/10/04/sabah-travel.html</link>
-        <guid isPermaLink="true">http://www.ltybr.com///life/2015/10/04/sabah-travel.html</guid>
-        
-        <category>Life</category>
-        
-        
-        <category>Life</category>
         
       </item>
     
@@ -3136,15 +3093,15 @@ JAVA_OPTS=&quot;-server -XX:PermSize=128M -XX:MaxPermSize=256m -Xms1g -Xmx1g -Xm
 
 &lt;p&gt;在设这个最大内存即Xmx值时请先打开一个命令行，键入如下的命令：&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://www.jack003.com/static/img/blog/tomcat-optimize/1.jpg&quot; alt=&quot;tomcat&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.ltybr.com/static/img/blog/tomcat-optimize/1.jpg&quot; alt=&quot;tomcat&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;看，能够正常显示JDK的版本信息，说明，这个值你能够用。不是说32位系统下最高能够使用2GB内存吗？即：2048m，我们不防来试试&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://www.jack003.com/static/img/blog/tomcat-optimize/2.jpg&quot; alt=&quot;tomcat&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.ltybr.com/static/img/blog/tomcat-optimize/2.jpg&quot; alt=&quot;tomcat&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;可以吗？不可以！不要说2048m呢，我们小一点，试试1700m如何&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://www.jack003.com/static/img/blog/tomcat-optimize/3.jpg&quot; alt=&quot;tomcat&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.ltybr.com/static/img/blog/tomcat-optimize/3.jpg&quot; alt=&quot;tomcat&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;嘿嘿，连1700m都不可以，更不要说2048m了呢，2048m只是一个理论数值，这样说吧我这边有几台机器，有的机器-Xmx1800都没问题，有的机器最高只能到-Xmx1500m。&lt;/p&gt;
 
@@ -3441,7 +3398,7 @@ compressableMimeType=&quot;text/html,text/xml,text/javascript,text/css,text/plai
 
 &lt;p&gt;在到达第二轮时，我们的性能已经提升了多少倍呢？我们来看一个loaderrunner的截图吧：&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://www.jack003.com/static/img/blog/tomcat-optimize/4.jpg&quot; alt=&quot;tomcat&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.ltybr.com/static/img/blog/tomcat-optimize/4.jpg&quot; alt=&quot;tomcat&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;左边第一列是第一轮没有经过任何调优的压力测试报告。&lt;/p&gt;
 
@@ -4292,7 +4249,7 @@ modprobe -l|grep ipvs     ##检查ipvs的模块
 
 &lt;h4 id=&quot;dr&quot;&gt;一、DR模式&lt;/h4&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://www.jack003.com/static/img/blog/lvs/dr.jpg&quot; alt=&quot;dr&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.ltybr.com/static/img/blog/lvs/dr.jpg&quot; alt=&quot;dr&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;堡垒机脚本：&lt;/p&gt;
 
@@ -4364,7 +4321,7 @@ modprobe -l|grep ipvs     ##检查ipvs的模块
 
 &lt;h4 id=&quot;tun&quot;&gt;二、TUN模式&lt;/h4&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://www.jack003.com/static/img/blog/lvs/tun.jpg&quot; alt=&quot;tun&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.ltybr.com/static/img/blog/lvs/tun.jpg&quot; alt=&quot;tun&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;堡垒机脚本：&lt;/p&gt;
 
@@ -4442,7 +4399,7 @@ modprobe -l|grep ipvs     ##检查ipvs的模块
 
 &lt;h4 id=&quot;nat&quot;&gt;三、NAT模式&lt;/h4&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://www.jack003.com/static/img/blog/lvs/nat.jpg&quot; alt=&quot;nat&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.ltybr.com/static/img/blog/lvs/nat.jpg&quot; alt=&quot;nat&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;堡垒机脚本：&lt;/p&gt;
 
@@ -4517,7 +4474,7 @@ modprobe -l|grep ipvs     ##检查ipvs的模块
 
 &lt;p&gt;附比较表格图:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://www.jack003.com/static/img/blog/lvs/bijiao.jpg&quot; alt=&quot;bijiao&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.ltybr.com/static/img/blog/lvs/bijiao.jpg&quot; alt=&quot;bijiao&quot; /&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Sat, 09 May 2015 00:00:00 +0800</pubDate>
@@ -4532,7 +4489,7 @@ modprobe -l|grep ipvs     ##检查ipvs的模块
       </item>
     
       <item>
-        <title>MySQL主备模式配置</title>
+        <title>MySQL主从模式配置</title>
         <description>&lt;p&gt;背景：&lt;/p&gt;
 
 &lt;p&gt;主数据库IP：192.168.100.2&lt;/p&gt;
@@ -4767,7 +4724,7 @@ RUN_AS_USER=root
 
 &lt;p&gt;二、如果想要把nginx也隐藏掉，需要编辑nginx源码中的src/core/nginx.h头文件nginx修改为Microsoft-IIS版本号改为7，修改后的截图如下&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://www.jack003.com/static/img/blog/nginx/safe.jpg&quot; alt=&quot;safe&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.ltybr.com/static/img/blog/nginx/safe.jpg&quot; alt=&quot;safe&quot; /&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Tue, 03 Mar 2015 00:00:00 +0800</pubDate>
@@ -4904,12 +4861,12 @@ RUN_AS_USER=root
 &lt;a href=&quot;http://www.pythonchallenge.com/pc/return/evil1.jpg&quot;&gt;http://www.pythonchallenge.com/pc/return/evil1.jpg&lt;/a&gt;是网页,&lt;br /&gt;
 &lt;a href=&quot;http://www.pythonchallenge.com/pc/return/evil2.jpg&quot;&gt;http://www.pythonchallenge.com/pc/return/evil2.jpg&lt;/a&gt;是下面的图片：&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://www.jack003.com/static/img/blog/python_challenge12/evil2.jpg&quot; alt=&quot;evil2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.ltybr.com/static/img/blog/python_challenge12/evil2.jpg&quot; alt=&quot;evil2&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;打开网址：&lt;a href=&quot;http://www.pythonchallenge.com/pc/return/evil2.gfx&quot;&gt;http://www.pythonchallenge.com/pc/return/evil2.gfx&lt;/a&gt; 发现是一个二进制文档，还是没什么头绪&lt;br /&gt;
 继续打开&lt;a href=&quot;http://www.pythonchallenge.com/pc/return/evil3.jpg&quot;&gt;http://www.pythonchallenge.com/pc/return/evil3.jpg&lt;/a&gt; 是下面的图片：&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://www.jack003.com/static/img/blog/python_challenge12/evil3-1.jpg&quot; alt=&quot;evil3-1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.ltybr.com/static/img/blog/python_challenge12/evil3-1.jpg&quot; alt=&quot;evil3-1&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;看样子是没有图片了，但是打开&lt;a href=&quot;http://www.pythonchallenge.com/pc/return/evil4.jpg&quot;&gt;http://www.pythonchallenge.com/pc/return/evil4.jpg&lt;/a&gt; 看到如下语句：&lt;strong&gt;Bert is evil! go back!&lt;/strong&gt;，在chrome浏览器是看不到的，我是在IE浏览器上看到。&lt;br /&gt;
 回想网页开始的图片，是在均分扑克牌，这应该就是解题的思路了，那么代码很简单了，如下：&lt;/p&gt;
@@ -4929,15 +4886,15 @@ RUN_AS_USER=root
 
 &lt;p&gt;得到如下图片：&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://www.jack003.com/static/img/blog/python_challenge12/0.jpg&quot; alt=&quot;0&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.ltybr.com/static/img/blog/python_challenge12/0.jpg&quot; alt=&quot;0&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://www.jack003.com/static/img/blog/python_challenge12/1.png&quot; alt=&quot;1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.ltybr.com/static/img/blog/python_challenge12/1.png&quot; alt=&quot;1&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://www.jack003.com/static/img/blog/python_challenge12/2.gif&quot; alt=&quot;2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.ltybr.com/static/img/blog/python_challenge12/2.gif&quot; alt=&quot;2&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://www.jack003.com/static/img/blog/python_challenge12/3.png&quot; alt=&quot;3&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.ltybr.com/static/img/blog/python_challenge12/3.png&quot; alt=&quot;3&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://www.jack003.com/static/img/blog/python_challenge12/4.jpg&quot; alt=&quot;4&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://www.ltybr.com/static/img/blog/python_challenge12/4.jpg&quot; alt=&quot;4&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;最后一张图片的字母划掉了，所以答案是：&lt;strong&gt;disproportional&lt;/strong&gt;&lt;/p&gt;
 </description>
@@ -5061,7 +5018,1375 @@ UserKnownHostsFile /dev/null
       </item>
     
       <item>
-        <title>PHP学习第一个月</title>
+        <title>微信支付【公众号支付】</title>
+        <description>&lt;h4 id=&quot;api&quot;&gt;网页端调起支付API&lt;/h4&gt;
+
+&lt;p&gt;在微信浏览器里面打开H5网页中执行JS调起支付。接口输入输出数据格式为JSON，列表中参数名区分大小，大小写错误签名验证会失败。&lt;br /&gt;
+具体的参数如下&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;名称 	               变量名 	         必填 	           类型 	             示例值 	                        描述
+公众号id 	           appId 	           是 	        String(16) 	    wx8888888888888888 	            商户注册具有支付权限的公众号成功后即可获得
+时间戳 	               timeStamp 	       是 	        String(32) 	    1414561699 	                    当前的时间，其他详见时间戳规则
+随机字符串 	           nonceStr 	       是 	        String(32)    	5K8264ILTKCH16CQ2502SI8ZNMTM67VS 	随机字符串，不长于32位。推荐随机数生成算法
+订单详情扩展字符串 	   package 	           是 	        String(128) 	prepay_id=123456789 	          统一下单接口返回的prepay_id参数值，提交格式如：prepay_id=***
+签名方式 	           signType 	       是 	        String(32) 	    MD5 	                             签名算法，暂支持MD5
+签名 	               paySign             是 	        String(64)     	C380BEC2BFD727A4B6845133519F3AD6 	签名，详见签名生成算法
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;返回值&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;返回值 	                           描述
+get_brand_wcpay_request：ok 	支付成功
+get_brand_wcpay_request：cancel 	支付过程中用户取消
+get_brand_wcpay_request：fail 	支付失败
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;注：JS API的返回结果get_brand_wcpay_request：ok仅在用户成功完成支付时返回。由于前端交互复杂，get_brand_wcpay_request：cancel或者get_brand_wcpay_request：fail可以统一处理为用户遇到错误或者主动放弃，不必细化区分。&lt;/p&gt;
+
+&lt;p&gt;示例代码如下：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;function onBridgeReady(){
+   WeixinJSBridge.invoke(
+       &#39;getBrandWCPayRequest&#39;, {
+           &quot;appId&quot; ： &quot;wx2421b1c4370ec43b&quot;,     //公众号名称，由商户传入
+           &quot;timeStamp&quot;：&quot; 1395712654&quot;,         //时间戳，自1970年以来的秒数
+           &quot;nonceStr&quot; ： &quot;e61463f8efa94090b1f366cccfbbb444&quot;, //随机串
+           &quot;package&quot; ： &quot;prepay_id=u802345jgfjsdfgsdg888&quot;,
+           &quot;signType&quot; ： &quot;MD5&quot;,         //微信签名方式：
+           &quot;paySign&quot; ： &quot;70EA570631E4BB79628FBCA90534C63FF7FADD89&quot; //微信签名
+       },
+       function(res){
+           if(res.err_msg == &quot;get_brand_wcpay_request：ok&quot; ) {}     // 使用以上方式判断前端返回,微信团队郑重提示：res.err_msg将在用户支付成功后返回    ok，但并不保证它绝对可靠。
+       }
+   );
+}
+if (typeof WeixinJSBridge == &quot;undefined&quot;){
+   if( document.addEventListener ){
+       document.addEventListener(&#39;WeixinJSBridgeReady&#39;, onBridgeReady, false);
+   }else if (document.attachEvent){
+       document.attachEvent(&#39;WeixinJSBridgeReady&#39;, onBridgeReady);
+       document.attachEvent(&#39;onWeixinJSBridgeReady&#39;, onBridgeReady);
+   }
+}else{
+   onBridgeReady();
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;API示例&lt;/p&gt;
+
+&lt;p&gt;统一下单：&lt;/p&gt;
+
+&lt;p&gt;接口链接 URL地址：https://api.mch.weixin.qq.com/pay/unifiedorder&lt;br /&gt;
+需要证书&lt;br /&gt;
+必填的参数有&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;公众账号ID 	appid  	String(32)      微信分配的公众账号ID（企业号corpid即为此appId）
+商户号 	mch_id      	String(32)     微信支付分配的商户号
+随机字符串 	nonce_str     	String(32)       随机字符串，不长于32位。推荐随机数生成算法
+签名 	sign      String(32)      签名，详见签名生成算法
+商品描述 	body    String(128)     商品简单描述，该字段须严格按照规范传递，具体请见参数规定
+商户订单号    	out_trade_no      	String(32)    商户系统内部的订单号,32个字符内、可包含字母, 其他说明见商户订单号
+总金额 	total_fee 	Int   	订单总金额，单位为分，详见支付金额
+终端IP 	spbill_create_ip      String(16)      APP和网页支付提交用户端ip，Native支付填调用微信支付API的机器IP。
+通知地址 	notify_url          String(256)     接收微信支付异步通知回调地址，通知url必须为直接可访问的url，不能携带参数。
+交易类型 	trade_type       	String(16)       	取值如下：JSAPI，NATIVE，APP，详细说明见参数规定
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;返回结果&lt;/p&gt;
+
+&lt;p&gt;返回状态码&lt;br /&gt;
+ &lt;code class=&quot;highlighter-rouge&quot;&gt;
+ return_code        String(16)       SUCCESS     SUCCESS/FAIL 此字段是通信标识，非交易标识，交易是否成功需要查看result_code来判断
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;以下字段在return_code为SUCCESS的时候有返回&lt;/p&gt;
+
+&lt;p&gt;公众账号ID      appid       String(32)      调用接口提交的公众账号ID&lt;br /&gt;
+商户号     	mch_id 	   String(32)       调用接口提交的商户号&lt;br /&gt;
+随机字符串 	     nonce_str       String(32)      微信返回的随机字符串&lt;br /&gt;
+签名 	sign      String(32)      微信返回的签名，详见签名算法&lt;br /&gt;
+业务结果 	result_code      	String(16)       	SUCCESS/FAIL&lt;/p&gt;
+
+&lt;p&gt;申请退款:&lt;br /&gt;
+接口地址 接口链接：https://api.mch.weixin.qq.com/secapi/pay/refund&lt;br /&gt;
+请求需要双向证书。 详见证书使用&lt;/p&gt;
+
+&lt;p&gt;必选参数&lt;/p&gt;
+
+&lt;p&gt;公众账号ID 	appid      String(32)       微信分配的公众账号ID（企业号corpid即为此appId）&lt;br /&gt;
+商户号 	mch_id     String(32)           	微信支付分配的商户号&lt;br /&gt;
+随机字符串 	nonce_str     	String(32)       随机字符串，不长于32位。推荐随机数生成算法&lt;br /&gt;
+签名 	sign      String(32)          签名，详见签名生成算法&lt;br /&gt;
+微信订单号 	transaction_id       String(28)      微信生成的订单号，在支付通知中有返回   ：&lt;br /&gt;
+                                                                                        ：//二选一&lt;br /&gt;
+商户订单号 	out_trade_no         String(32)      233368018 	商户侧传给微信的订单号      ：&lt;br /&gt;
+商户退款单号 	out_refund_no     String(32)      商户系统内部的退款单号，商户系统内部唯一，同一退款单号多次请求只退一笔&lt;br /&gt;
+订单金额 	total_fee        	Int      	订单总金额，单位为分，只能为整数，详见支付金额&lt;br /&gt;
+退款金额 	refund_fee       	Int         退款总金额，订单总金额，单位为分，只能为整数，详见支付金额&lt;br /&gt;
+操作员 	op_user_id         String(32)      操作员帐号, 默认为商户号&lt;/p&gt;
+
+&lt;p&gt;返回结果&lt;br /&gt;
+返回状态码 	return_code 	是 	String(16) 	SUCCESS 	SUCCESS/FAIL&lt;/p&gt;
+
+&lt;p&gt;不过我们现在可以使用SDK包，微信给我们提供了三种SDK包&lt;br /&gt;
+JAVA 	【微信支付】API对应的SDK和调用示例 	刷卡支付     &lt;a href=&quot;https://pay.weixin.qq.com/wiki/doc/api/download/wxpay_scanpay_java_sdk_proj-master.zip&quot;&gt;下载&lt;/a&gt;&lt;br /&gt;
+.NET C# 【微信支付】API对应的SDK和调用示例 	刷卡支付、微信内网页支付、扫码支付     &lt;a href=&quot;https://pay.weixin.qq.com/wiki/doc/api/download/WxPayAPI_CS_v3.zip&quot;&gt;下载&lt;/a&gt;&lt;br /&gt;
+PHP 	【微信支付】API对应的SDK和调用示例 	刷卡支付、微信内网页支付、扫码支付     &lt;a href=&quot;https://pay.weixin.qq.com/wiki/doc/api/download/WxpayAPI_php_v3.zip&quot;&gt;下载&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 13 Jan 2015 00:00:00 +0800</pubDate>
+        <link>http://www.ltybr.com///wechat/2015/01/13/weipay.html</link>
+        <guid isPermaLink="true">http://www.ltybr.com///wechat/2015/01/13/weipay.html</guid>
+        
+        <category>weipay</category>
+        
+        
+        <category>wechat</category>
+        
+      </item>
+    
+      <item>
+        <title>RHEL的EPEL源地址及安装</title>
+        <description>&lt;p&gt;RHEL6:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[root@test ~]# rpm -ivh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-5.noarch.rpm
+[root@test ~]# rpm -ivh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;RHEL5:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[root@test ~]# rpm -ivh http://download.fedoraproject.org/pub/epel/5/i386/epel-release-5-4.noarch.rpm
+[root@test ~]# rpm -ivh  http://download.fedoraproject.org/pub/epel/5/i386/epel-release-5-4.noarch.rpm
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;EPEL版本不同，根据不同系统请自行安装。&lt;/p&gt;
+</description>
+        <pubDate>Tue, 13 Jan 2015 00:00:00 +0800</pubDate>
+        <link>http://www.ltybr.com///linux/2015/01/13/linux-epel.html</link>
+        <guid isPermaLink="true">http://www.ltybr.com///linux/2015/01/13/linux-epel.html</guid>
+        
+        <category>epel</category>
+        
+        
+        <category>Linux</category>
+        
+      </item>
+    
+      <item>
+        <title>归结web网站攻击与防范  </title>
+        <description>&lt;p&gt;一般现在常见的网站攻击方式：&lt;br /&gt;
+sql注入，xss攻击，csrf攻击，文件上传漏洞，访问控制。这些是一般网站容易发生的攻击方式，接下来我们一一分析它们是如何攻击以及防范的。&lt;/p&gt;
+
+&lt;h2 id=&quot;sql&quot;&gt;sql注入&lt;/h2&gt;
+
+&lt;h3 id=&quot;sql-1&quot;&gt;什么是sql注入？&lt;/h3&gt;
+
+&lt;p&gt;sql注入说的通俗一些就是用户在http请求中注入而已的代码，导致服务器使用数据库sql命令时，导致恶意sql一起被执行。&lt;br /&gt;
+用户登录，输入用户名 zhangsan，密码 ‘ or ‘1’=’1 ，如果此时使用参数构造的方式，就会出现&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    select * from user
+   where name = &#39;zhangsan&#39;    and password = &#39;&#39; or &#39;1&#39;=&#39;1&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;这样zhangsan用户没有密码也可以被登陆，如果用户注入的是操作表的sql，就有大麻烦了。&lt;/p&gt;
+
+&lt;h3 id=&quot;sql-2&quot;&gt;怎么防范sql注入？&lt;/h3&gt;
+
+&lt;p&gt;     1.不用拼接 SQL 字符串&lt;br /&gt;
+     2. 有效性检验。(前端后端都需要。第一准则，外部都是不可信的，防止攻击者绕过Web端请求)&lt;br /&gt;
+     3过滤 SQL 需要的参数中的特殊字符。比如单引号、双引号。推荐几个函数mysql_real_escape_string()  addslashes()htmlentities() htmlspecialchars() strip_tags()  intval()&lt;br /&gt;
+     4.限制字符串输入的长度。&lt;/p&gt;
+
+&lt;h2 id=&quot;xss&quot;&gt;xss攻击&lt;/h2&gt;
+
+&lt;h3 id=&quot;xss-1&quot;&gt;什么是xss攻击&lt;/h3&gt;
+
+&lt;p&gt;跨站点脚本攻击，指攻击者通过篡改网页，嵌入恶意脚本程序，在用户浏览网页时，控制用户浏览器进行恶意操作的一种攻击方式。&lt;br /&gt;
+假设页面上有一个表单：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &amp;lt;input  type=&quot;text&quot; name=&quot;name&quot; value=&quot;lisi&quot;/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;如果，用户输入的不是一个正常的字符串，而是&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &quot;/&amp;gt;&amp;lt;script&amp;gt;alert(&quot;haha&quot;)&amp;lt;/script&amp;gt;&amp;lt;!-
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;此时，页面变成下面的内容，在输入框input的后面带上了一段脚本代码。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &amp;lt;input  type=&quot;text&quot; name=&quot;name&quot; value=&quot;梁桂钊&quot;/&amp;gt;&amp;lt;script&amp;gt;alert(&quot;haha&quot;)&amp;lt;/script&amp;gt;&amp;lt;!-&quot;/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;这端脚本程序只是弹出一个消息框，并不会造成什么危害，攻击的威力取决于用户输入了什么样的脚本，只要稍微修改，便可使攻击极具攻击性。常见的就是用户一般在评论中或者反馈中使用xss。&lt;/p&gt;
+
+&lt;h3 id=&quot;xss-2&quot;&gt;如何防范xss&lt;/h3&gt;
+
+&lt;p&gt;同sql注入一样。可以限制输入字符串的长度，对HTML转义处理。将其中的”&amp;lt;”,”&amp;gt;”等特殊字符进行转义编码。&lt;/p&gt;
+
+&lt;h2 id=&quot;csrf&quot;&gt;csrf攻击&lt;/h2&gt;
+
+&lt;h3 id=&quot;csrf-1&quot;&gt;什么是csrf攻击&lt;/h3&gt;
+
+&lt;p&gt;跨站点请求伪造，指攻击者通过跨站请求，以合法的用户的身份进行非法操作。可以这么理解CSRF攻击：攻击者盗用你的身份，以你的名义向第三方网站发送恶意请求。CRSF能做的事情包括利用你的身份发邮件，发短信，进行交易转账，甚至盗取账号信息。跨站点请求伪造，指攻击者通过跨站请求，以合法的用户的身份进行非法操作。可以这么理解CSRF攻击：攻击者盗用你的身份，以你的名义向第三方网站发送恶意请求。CRSF能做的事情包括利用你的身份发邮件，发短信，进行交易转账，甚至盗取账号信息。&lt;/p&gt;
+
+&lt;h3 id=&quot;csrf-2&quot;&gt;怎么防止csrf&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;安全框架使用。比如yii lavarel等。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;token机制。在HTTP请求中进行token验证，如果请求中没有token或者token内容不正确，则认为CSRF攻击而拒绝该请求。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;验证码。通常情况下，验证码能够很好的遏制CSRF攻击，但是很多情况下，出于用户体验考虑，验证码只能作为一种辅助手段，而不是最主要的解决方案。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;referer识别。在HTTP Header中有一个字段Referer，它记录了HTTP请求的来源地址。如果Referer是其他网站，就有可能是CSRF攻击，则拒绝该请求。但是，服务器并非都能取到Referer。很多用户出于隐私保护的考虑，限制了Referer的发送。在某些情况下，浏览器也不会发送Referer，例如HTTPS跳转到HTTP。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;文件上传漏洞&lt;/h2&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;什么是文件上传漏洞&lt;/h3&gt;
+
+&lt;p&gt;文件上传漏洞，指的是用户上传一个可执行的脚本文件，并通过此脚本文件获得了执行服务端命令的能力。比如用户上传一个可以关机的执行文件，你的损失就大发了。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;如何防范&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;文件上传的目录设置为不可执行。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;判断文件类型。在判断文件类型的时候，可以结合使用MIME Type，后缀检查等方式。因为对于上传文件，不能简单地通过后缀名称来判断文件的类型，因为攻击者可以将可执行文件的后缀名称改为图片或其他后缀类型，诱导用户执行。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;对上传的文件类型进行白名单校验，只允许上传可靠类型。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;上传的文件需要进行重新命名，使攻击者无法猜想上传文件的访问路径，将极大地增加攻击成本，同时向shell.PHP.rar.ara这种文件，因为重命名而无法成功实施攻击。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;限制上传文件的大小。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;单独设置文件服务器的域名。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;访问控制&lt;/h2&gt;
+
+&lt;p&gt;即RBAC。现在一般网站都已经不存在这种问题了。&lt;/p&gt;
+</description>
+        <pubDate>Mon, 13 Oct 2014 00:00:00 +0800</pubDate>
+        <link>http://www.ltybr.com///framework/2014/10/13/websafe.html</link>
+        <guid isPermaLink="true">http://www.ltybr.com///framework/2014/10/13/websafe.html</guid>
+        
+        <category>小记</category>
+        
+        
+        <category>Framework</category>
+        
+      </item>
+    
+      <item>
+        <title>常见的用户密码加密方式以及破解方法 </title>
+        <description>&lt;p&gt;      作为互联网公司的信息安全从业人员经常要处理撞库扫号事件，产生撞库扫号的根本原因是一些企业发生了信息泄露事件，且这些泄露数据未加密或者加密方式比较弱，导致黑客可以还原出原始的用户密码。目前已经曝光的信息泄露事件至少上百起，其中包括多家一线互联网公司，泄露总数据超过10亿条。本文作者就职于携程技术中心信息安全部，文中他将分享用户密码的加密方式以及主要的破解方法。&lt;/p&gt;
+
+&lt;p&gt;      要完全防止信息泄露是非常困难的事情，除了防止黑客外，还要防止内部人员泄密。但如果采用合适的算法去加密用户密码，即使信息泄露出去，黑客也无法还原出原始的密码（或者还原的代价非常大）。也就是说我们可以将工作重点从防止泄露转换到防止黑客还原出数据。下面我们将分别介绍用户密码的加密方式以及主要的破解方法。&lt;/p&gt;
+
+&lt;h2&gt;用户密码加密：&lt;/h2&gt;
+&lt;p&gt;      用户密码保存到数据库时，常见的加密方式有哪些，我们该采用什么方式来保护用户的密码呢？以下几种方式是常见的密码保存方式：&lt;/p&gt;
+
+&lt;p&gt;1.直接明文保存，比如用户设置的密码是“123456”，直接将“123456”保存在数据库中，这种是最简单的保存方式，也是最不安全的方式。但实际上不少互联网公司，都可能采取的是这种方式。&lt;/p&gt;
+
+&lt;p&gt;2.使用对称加密算法来保存，比如3DES、AES等算法，使用这种方式加密是可以通过解密来还原出原始密码的，当然前提条件是需要获取到密钥。不过既然大量的用户信息已经泄露了，密钥很可能也会泄露，当然可以将一般数据和密钥分开存储、分开管理，但要完全保护好密钥也是一件非常复杂的事情，所以这种方式并不是很好的方式。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.ltybr.com/static/img/blog/framework/user1.jpg&quot; alt=&quot;User1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;3.使用MD5、SHA1等单向HASH算法保护密码，使用这些算法后，无法通过计算还原出原始密码，而且实现比较简单，因此很多互联网公司都采用这种方式保存用户密码，曾经这种方式也是比较安全的方式，但随着彩虹表技术的兴起，可以建立彩虹表进行查表破解，目前这种方式已经很不安全了。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.ltybr.com/static/img/blog/framework/user2.jpg&quot; alt=&quot;User1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;4.特殊的单向HASH算法，由于单向HASH算法在保护密码方面不再安全，于是有些公司在单向HASH算法基础上进行了加盐、多次HASH等扩展，这些方式可以在一定程度上增加破解难度，对于加了“固定盐”的HASH算法，需要保护“盐”不能泄露，这就会遇到“保护对称密钥”一样的问题，一旦“盐”泄露，根据“盐”重新建立彩虹表可以进行破解，对于多次HASH，也只是增加了破解的时间，并没有本质上的提升。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.ltybr.com/static/img/blog/framework/user3.jpg&quot; alt=&quot;User1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;5.PBKDF2算法，该算法原理大致相当于在HASH算法基础上增加随机盐，并进行多次HASH运算，随机盐使得彩虹表的建表难度大幅增加，而多次HASH也使得建表和破解的难度都大幅增加。使用PBKDF2算法时，HASH算法一般选用sha1或者sha256，随机盐的长度一般不能少于8字节，HASH次数至少也要1000次，这样安全性才足够高。一次密码验证过程进行1000次HASH运算，对服务器来说可能只需要1ms，但对于破解者来说计算成本增加了1000倍，而至少8字节随机盐，更是把建表难度提升了N个数量级，使得大批量的破解密码几乎不可行，该算法也是美国国家标准与技术研究院推荐使用的算法。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.ltybr.com/static/img/blog/framework/user4.jpg&quot; alt=&quot;User1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;6.bcrypt、scrypt等算法，这两种算法也可以有效抵御彩虹表，使用这两种算法时也需要指定相应的参数，使破解难度增加。&lt;/p&gt;
+
+&lt;p&gt;下表对比了各个算法的特性：&lt;/p&gt;
+
+&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;623&quot; interlaced=&quot;enabled&quot;&gt;&lt;colgroup&gt;&lt;col width=&quot;116&quot; style=&quot;;width:116px&quot; /&gt;&lt;col width=&quot;132&quot; style=&quot;;width:132px&quot; /&gt;&lt;col width=&quot;121&quot; style=&quot;;width:121px&quot; /&gt;&lt;col width=&quot;81&quot; style=&quot;;width:81px&quot; /&gt;&lt;col width=&quot;172&quot; style=&quot;;width:172px&quot; /&gt;&lt;/colgroup&gt;&lt;tbody&gt;&lt;tr height=&quot;20&quot; style=&quot;height:20px&quot;&gt;&lt;td height=&quot;20&quot; width=&quot;116&quot;&gt;算法&lt;/td&gt;&lt;td width=&quot;132&quot; style=&quot;&quot;&gt;特点&lt;/td&gt;&lt;td width=&quot;121&quot; style=&quot;&quot;&gt;有效破解方式&lt;/td&gt;&lt;td width=&quot;81&quot; style=&quot;&quot;&gt;破解难度&lt;/td&gt;&lt;td width=&quot;172&quot; style=&quot;&quot;&gt;其它&lt;/td&gt;&lt;/tr&gt;&lt;tr height=&quot;20&quot; style=&quot;height:20px&quot;&gt;&lt;td height=&quot;20&quot;&gt;明文保存&lt;/td&gt;&lt;td&gt;实现简单&lt;/td&gt;&lt;td&gt;无需破解&lt;/td&gt;&lt;td&gt;简单&lt;/td&gt;&lt;td&gt;&lt;br /&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr height=&quot;20&quot; style=&quot;height:20px&quot;&gt;&lt;td height=&quot;20&quot;&gt;对称加密&lt;/td&gt;&lt;td&gt;可以解密出明文&lt;/td&gt;&lt;td&gt;获取密钥&lt;/td&gt;&lt;td&gt;中&lt;/td&gt;&lt;td&gt;需要确保密钥不泄露&lt;/td&gt;&lt;/tr&gt;&lt;tr height=&quot;20&quot; style=&quot;height:20px&quot;&gt;&lt;td height=&quot;20&quot;&gt;单向HASH&lt;/td&gt;&lt;td&gt;不可解密&lt;/td&gt;&lt;td&gt;碰撞、彩虹表&lt;/td&gt;&lt;td&gt;中&lt;/td&gt;&lt;td&gt;&lt;br /&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr height=&quot;20&quot; style=&quot;height:20px&quot;&gt;&lt;td height=&quot;20&quot;&gt;特殊HASH&lt;/td&gt;&lt;td&gt;不可解密&lt;/td&gt;&lt;td&gt;碰撞、彩虹表&lt;/td&gt;&lt;td&gt;中&lt;/td&gt;&lt;td&gt;需要确保“盐”不泄露&lt;/td&gt;&lt;/tr&gt;&lt;tr height=&quot;20&quot; style=&quot;height:20px&quot;&gt;&lt;td height=&quot;20&quot;&gt;Pbkdf2&lt;/td&gt;&lt;td&gt;不可解密&lt;/td&gt;&lt;td&gt;无&lt;/td&gt;&lt;td&gt;难&lt;/td&gt;&lt;td&gt;需要设定合理的参数&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;tr&gt;
+## 用户密码破解
+
+用户密码破解需要针对具体的加密方式来实施，如果使用对称加密，并且算法足够安全（比如AES），必须获取到密钥才能解密，没有其它可行的破解方式。
+
+如果采用HASH算法（包括特殊HASH），一般使用彩虹表的方式来破解，彩虹表的原理是什么呢？我们先来了解下如何进行HASH碰撞。单向HASH算法由于不能进行解密运算，只能通过建表、查表的方式进行碰撞，即将常用的密码及其对应的HASH值全计算出来并存储，当获取到HASH值是，直接查表获取原始密码，假设用MD5算法来保护6位数字密码，可以建如下表：
+
+&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;717&quot; interlaced=&quot;enabled&quot;&gt;&lt;colgroup&gt;&lt;col width=&quot;168&quot; style=&quot;;width:168px&quot; /&gt;&lt;col width=&quot;549&quot; style=&quot;;width:549px&quot; /&gt;&lt;/colgroup&gt;&lt;tbody&gt;&lt;tr height=&quot;24&quot; style=&quot;height:24px&quot;&gt;&lt;td height=&quot;24&quot; width=&quot;168&quot; style=&quot;background-color: rgb(187, 187, 187);&quot;&gt;原始密码&lt;/td&gt;&lt;td width=&quot;549&quot; style=&quot;background-color: rgb(187, 187, 187);&quot;&gt;MD5值&lt;/td&gt;&lt;/tr&gt;&lt;tr height=&quot;93&quot; style=&quot;height:93px&quot;&gt;&lt;td height=&quot;93&quot; width=&quot;168&quot;&gt;0&lt;/td&gt;&lt;td width=&quot;549&quot; style=&quot;&quot;&gt;670B14728AD9902AECBA32E22FA4F6BD&lt;/td&gt;&lt;/tr&gt;&lt;tr height=&quot;92&quot; style=&quot;height:92px&quot;&gt;&lt;td height=&quot;92&quot; width=&quot;168&quot; style=&quot;background-color: #FAFBFB&quot;&gt;1&lt;/td&gt;&lt;td width=&quot;549&quot; style=&quot;background-color: #FAFBFB&quot;&gt;04FC711301F3C784D66955D98D399AFB&lt;/td&gt;&lt;/tr&gt;&lt;tr height=&quot;24&quot; style=&quot;height:24px&quot;&gt;&lt;td height=&quot;24&quot; width=&quot;168&quot;&gt;…&lt;/td&gt;&lt;td width=&quot;549&quot; style=&quot;&quot;&gt;…&lt;/td&gt;&lt;/tr&gt;&lt;tr height=&quot;92&quot; style=&quot;height:92px&quot;&gt;&lt;td height=&quot;92&quot; width=&quot;168&quot; style=&quot;background-color: #FAFBFB&quot;&gt;999999&lt;/td&gt;&lt;td width=&quot;549&quot; style=&quot;background-color: #FAFBFB&quot;&gt;52C69E3A57331081823331C4E69D3F2E&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+全表共100W条记录，因为数据量不大，这种情况建表、查表都非常容易。但是当密码并不是6位纯数字密码，而是数字、大小写字母结合的10位密码时，建立一个这样的表需要（26+26+10）^ 10 ≈ 83亿亿（条记录），存储在硬盘上至少要占用2000W TB的空间，这么大的存储空间，成本太大，几乎不可行。有什么办法可以减少存储空间？一种方法是“预计算哈希链”，“预计算哈希链”可以大幅减少HASH表的存储空间，但相应的增加了查表时的计算量，其原理大致如下：
+
+
+建表过程：
+
+![User1](http://www.ltybr.com/static/img/blog/framework/user5.jpg)
+
+先对原始数据“000000”进行一次HASH运算得到“670B1E”，再对HASH值进行一次R运算，R是一个定制的算法可以将HASH值映射到明文空间上（这里我们的明文空间是000000~999999），R运算后得到“283651”，再对“283651”进行hash运算得到“1A99CD”，然后在进行R运算得到“819287”，如此重复多次，得到一条哈希链。然后再选用其它原始数据建立多条哈希链。最终仅将链头和链尾保存下来，中间节点全都去掉。
+
+查表过程：假设拿到了一条HASH值“670B1E”，首先进行一次R运算，得到了“283651”，查询所有链尾是否有命中，如果没有，则再进行一次HASH、一次R，得到了“819287”，再次所有链尾，可以得到看出已经命中。这样我们就可以基本确认“670B1E”对应的明文就在这条链上，然后我们把这条链的生成过程进行重新计算，计算过程中可以发现“000000”的HASH值就是“670B1E”，这样就完成了整个查表过程。这种表就是“预计算哈希链”。这种方式存在一个问题，多条链之间可能存在大量的重复数据，如下图所示：
+
+![User1](http://www.ltybr.com/static/img/blog/framework/user6.jpg)
+
+为了解决这个问题，我们将R算法进行扩展，一条链上的多次R运算采用不同的算法，如下图：
+
+![User1](http://www.ltybr.com/static/img/blog/framework/user7.jpg)
+
+一条链上的每个R算法都不一样，就像彩虹的每层颜色一样，因此取名的为彩虹表。
+
+当然彩虹表除了可以用户破解HASH算法外，理论上还可以用于破解对称加密算法，比如DES算法，由于DES算法密钥比较短，建立彩虹表破解是完全可行的；但对于AES算法，由于密钥比较长，建表几乎不可行（需要耗时N亿年）。
+
+## 小结
+
+采用PBKDF2、bcrypt、scrypt等算法可以有效抵御彩虹表攻击，即使数据泄露，最关键的“用户密码”仍然可以得到有效的保护，黑客无法大批量破解用户密码，从而切断撞库扫号的根源。当然，对于已经泄露的密码，还是需要用户尽快修改密码，不要再使用已泄露的密码。
+&lt;/tr&gt;
+</description>
+        <pubDate>Mon, 13 Oct 2014 00:00:00 +0800</pubDate>
+        <link>http://www.ltybr.com///framework/2014/10/13/userpas.html</link>
+        <guid isPermaLink="true">http://www.ltybr.com///framework/2014/10/13/userpas.html</guid>
+        
+        <category>小记</category>
+        
+        
+        <category>Framework</category>
+        
+      </item>
+    
+      <item>
+        <title>PHP学习&lt;4&gt;</title>
+        <description>&lt;p&gt;面象对象的概念&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;面向对象编程（Object Oriented Programming, OOP, 面向对象程序设计）是一种计算机编程架构，OOP的一条基本原则是计算机程序是由单个能够起到子程序作用的单元或对象组合而成，OOP达到了软件工程的三个目标：重用性、灵活性和扩展性。为了实现整体运算，每个对象都能够接收信息、处理数据和向其它对象发送信息。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;什么是类， 什么是对象， 类和对象这间的关系&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;类的概念：类是具有相同属性和服务的一组对象的集合。它为属于该类的所有对象提供了统一的抽象描述，其内部包括属性和服务两个主要部分。在面向对象的编程语言中，类是一个独立的程序单位，它应该有一个类名并包括属性说明和服务说明两个主要部分。
+
+对象的概念：对象是系统中用来描述客观事物的一个实体，它是构成系统的一个基本单位。一个对象由一组属性和对这组属性进行操作的一组服务组成。从更抽象的角度来说，对象是问题域或实现域中某些事物的一个抽象，它反映该事物在系统中需要保存的信息和发挥的作用；它是一组属性和有权对这些属性进行操作的一组服务的封装体。客观世界是由对象和对象之间的联系组成的。
+
+类与对象的关系就如模具和铸件的关系，类的实例化结果就是对象，而对一类对象的抽象就是类.类描述了一组有相同特性（属性）和相同行为（方法）的对象。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;一、如何抽象出一个类&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;类的定义： ```
+class类名{
+} ```
+所有类都是从属性和方法这两方面去写， 属性又叫做这个类的成员属性，方法叫做这个类的成员方法。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    class人{
+       成员属性：姓名、性别、年龄、身高、体重、电话、家庭住址
+       成员方法：可以开车， 会说英语， 可以使用电脑
+    }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;属性：
+
+通过在类定义中使用关键字&quot;var  &quot;来声明变量，即创建了类的属性,虽然在声明成员属性的时候可以给定初值， 但是在声明类的时候给成员属性初使值是没有必要的，比如说要是把人的姓名赋上“张三”,那么用这个类实例出几十个人，这几十个人都叫张三了，所以没有必要， 我们在实例出对象后给成员属性初使值就可以了。
+
+如：　var  $somevar;
+
+方法(成员函数)：
+
+通过在类定义中声明函数，即创建了类的方法。
+
+如：　function  somefun(参数列表){
+            ... ...
+     }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;?php
+     class Person
+     {
+         //下面是人的成员属性
+         var $name;  //人的名子
+         var $sex;    //人的性别
+         var $age;    //人的年龄
+
+         //下面是人的成员方法
+         function say() //这个人可以说话的方法
+         {
+              echo &quot;这个人在说话&quot;;
+         }
+
+         function run()  //这个人可以走路的方法
+         {
+              echo &quot;这个人在走路&quot;;
+         }
+     }
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;二、如何实例化对象&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;我们上面说过面向对象程序的单位就是对象，但对象又是通过类的实例化出来的，既然我们类会声明了，下一步就是实例化对象了。当定义好类后，我们使用new关键字来生成一个对象。
+ $对象名称 = new 　类名称（）；
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;?php
+     class Person
+     {
+         //下面是人的成员属性
+         var $name;  //人的名子
+         var $sex;    //人的性别
+         var $age;    //人的年龄
+
+         //下面是人的成员方法
+         function say()  //这个人可以说话的方法
+         {
+              echo &quot;这个人在说话&quot;;
+         }
+
+         function run()  //这个人可以走路的方法
+         {
+              echo &quot;这个人在走路&quot;;
+         }
+     }
+     $p1=new Person();
+     $p2=new Person();
+     $p3=new Person();
+?&amp;gt;
+$p1=new Person();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;这条代码就是通过类产生实例对象的过程，$p1就是我们实例出来的对象名称，同理，$p2, $p3也是我们实例出来的对象名称，一个类可以实例出多个对象，每个对象都是独立的，上面的代码相当于实例出来3个人来， 每个人之间是没有联系的， 只能说明他们都是人类， 每个人都有自己的姓名， 性别和年龄的属性，每个人都有说话和走路的方法，只要是类里面体现出来的成员属性和成员方法，实例化出来的对象里面就包含了这些属性和方法。&lt;/p&gt;
+
+&lt;p&gt;如何去使用对象中的成员&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;上面看到PHP对象中的成员有两种一种是成员属性， 一种是成员方法。对象我们以经可以声明了，$p1=new Person();  怎么去使用对象的成员呢？要想访问对象中的成员就要使用一个特殊的操作符”-&amp;gt;”来完成对象成员的访问：
+              对象-&amp;gt;属性    $p1-&amp;gt;name;        $p2-&amp;gt;age;      $p3-&amp;gt;sex;
+              对象-&amp;gt;方法     $p1-&amp;gt;say();        $p2-&amp;gt;run();
+如下面实例:
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;?php
+     class Person
+     {
+         //下面是人的成员属性
+         var $name;  //人的名子
+         var $sex;    //人的性别
+         var $age;    //人的年龄
+
+         //下面是人的成员方法
+         function say()  //这个人可以说话的方法
+         {
+              echo &quot;这个人在说话&quot;;
+         }
+
+         function run()  //这个人可以走路的方法
+         {
+              echo &quot;这个人在走路&quot;;
+         }
+     }
+
+     $p1=newPerson();  //创建实例对象$p1
+     $p2=newPerson();  //创建实例对象$p2
+     $p3=newPerson();  //创建实例对象$p3
+
+     //下面三行是给$p1对象属性赋值
+     $p1-&amp;gt;name=”张三”;
+     $p1-&amp;gt;sex=”男”;
+     $p1-&amp;gt;age=20;
+
+     //下面三行是访问$p1对象的属性
+     echo “p1对象的名子是：”.$p1-&amp;gt;name.”&amp;lt;br&amp;gt;”;
+     echo “p1对象的性别是：”.$p1-&amp;gt;sex.”&amp;lt;br&amp;gt;”;
+     echo “p1对象的年龄是：”.$p1-&amp;gt;age.”&amp;lt;br&amp;gt;”;
+
+     //下面两行访问$p1对象中的方法
+     $p1-&amp;gt;say();
+     $p1-&amp;gt;run();
+
+     //下面三行是给$p2对象属性赋值
+     $p2-&amp;gt;name=”李四”;
+     $p2-&amp;gt;sex=”女”;
+     $p2-&amp;gt;age=30;
+
+     //下面三行是访问$p2对象的属性
+     echo “p2对象的名子是：”.$p2-&amp;gt;name.”&amp;lt;br&amp;gt;”;
+     echo “p2对象的性别是：”.$p2-&amp;gt;sex.”&amp;lt;br&amp;gt;”;
+     echo “p2对象的年龄是：”.$p2-&amp;gt;age.”&amp;lt;br&amp;gt;”;
+
+     //下面两行访问$p2对象中的方法
+     $p2-&amp;gt;say();
+     $p2-&amp;gt;run();
+
+     //下面三行是给$p3对象属性赋值
+     $p3-&amp;gt;name=”王五”;
+     $p3-&amp;gt;sex=”男”;
+     $p3-&amp;gt;age=40;
+
+     //下面三行是访问$p3对象的属性
+     echo “p3对象的名子是：”.$p3-&amp;gt;name.”&amp;lt;br&amp;gt;”;
+     echo “p3对象的性别是：”.$p3-&amp;gt;sex.”&amp;lt;br&amp;gt;”;
+     echo “p3对象的年龄是：”.$p3-&amp;gt;age.”&amp;lt;br&amp;gt;”;
+
+     //下面两行访问$p3对象中的方法
+     $p3-&amp;gt;say();
+     $p3-&amp;gt;run();
+
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;从上例中可以看出只是对象里面的成员就要使用对象-&amp;gt;属性 、对象-&amp;gt;方法      形式访问，再没有第二种方法来访问对象中的成员了。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;三、特殊的引用“$this“的使用&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;现在我们知道了如何访问对象中的成员，是通过”对象-&amp;gt;成员”的方式访问的,这是在对象的外部去访问对象中成员的形式， 那么如果我想在对象的内部，让对象里的方法访问本对象的属性，或是对象中的方法去调用本对象的其它方法这时我们怎么办？因为对象里面的所有的成员都要用对象来调用，包括对象的内部成员之间的调用，所以在PHP里面给我提供了一个本对象的引用$this， 每个对象里面都有一个对象的引用$this来代表这个对象，完成对象内部成员的调用, this的本意就是“这个”的意思， 上面的实例里面，我们实例化三个实例对象$P1、 $P2、 $P3，这三个对象里面各自存在一个$this分别代表对象$p1、$p2、$p3 。
+
+$this-&amp;gt;属性   $this-&amp;gt;name;              $this-&amp;gt;age;    $this-&amp;gt;sex;
+$this-&amp;gt;方法     $this-&amp;gt;say();              $this-&amp;gt;run();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;四、构造方法与析构方法&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;大多数类都有一种称为构造函数的特殊方法。当创建一个对象时，它将自动调用构造函数，也就是使用new这个关键字来实例化对象的时候自动调用构造方法。
+
+构造函数的声明与其它操作的声明一样，只是其名称必须是__construct( )。这是PHP5中的变化，以前的版本中，构造函数的名称必须与类名相同，这种在PHP5中仍然可以用，但现在以经很少有人用了，这样做的好处是可以使构造函数独立于类名，当类名发生改变时不需要改相应的构造函数名称了。为了向下兼容，如果一个类中没有名为__construct( )的方法，PHP将搜索一个php4中的写法,与类名相同名的构造方法。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;　  格式：function __construct ( [参数] ) { … … }&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;在一个类中只能声明一个构造方法，而是只有在每次创建对象的时候都会去调用一次构造方法，不能主动的调用这个方法，所以通常用它执行一些有用的初始化任务。比如对成属性在创建对象的时候赋初值。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;?
+    //创建一个人类
+    class Person
+    {
+        //下面是人的成员属性
+        var $name;  //人的名子
+        var $sex;    //人的性别
+        var $age;    //人的年龄
+
+        //定义一个构造方法参数为姓名$name、性别$sex和年龄$age
+        function__construct($name, $sex, $age)
+        {
+            //通过构造方法传进来的$name给成员属性$this-&amp;gt;name赋初使值
+            $this-&amp;gt;name=$name;
+            //通过构造方法传进来的$sex给成员属性$this-&amp;gt;sex赋初使值
+            $this-&amp;gt;sex=$sex;
+            //通过构造方法传进来的$age给成员属性$this-&amp;gt;age赋初使值
+            $this-&amp;gt;age=$age;
+        }
+
+        //这个人的说话方法
+        function say()
+        {
+            echo &quot;我的名子叫：&quot;.$this-&amp;gt;name.&quot;性别：&quot;.$this-&amp;gt;sex.&quot;我的年龄是：&quot;.$this-&amp;gt;age.&quot;&amp;lt;br&amp;gt;&quot;;
+        }
+    }
+
+    //通过构造方法创建3个对象$p1、p2、$p3,分别传入三个不同的实参为姓名、性别和年龄
+    $p1=new Person(“张三”，”男”, 20);
+    $p2=new Person(“李四”，”女”, 30);
+    $p3=new Person(“王五”，”男”, 40);
+
+    //下面访问$p1对象中的说话方法
+    $p1-&amp;gt;say();
+    //下面访问$p2对象中的说话方法
+    $p2-&amp;gt;say();
+    //下面访问$p3对象中的说话方法
+    $p3-&amp;gt;say();
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;输出结果为：&lt;/p&gt;
+
+&lt;p&gt;我的名子叫：张三 性别：男 我的年龄是：20&lt;br /&gt;
+我的名子叫：李四 性别：女 我的年龄是：30&lt;br /&gt;
+我的名子叫：王五 性别：男 我的年龄是：40&lt;/p&gt;
+
+&lt;p&gt;析构函数：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;与构造函数相对的就是析构函数。析构函数是PHP5新添加的内容，在PHP4中没有析构函数。析构函数允许在销毁一个类之前执行的一些操作或完成一些功能，比如说关闭文件， 释放结果集等，析构函数会在到某个对象的所有引用都被删除或者当对象被显式销毁时执行，也就是对象在内存中被销毁前调用析构函数。与构造函数的名称类似，一个类的析构函数名称必须是__destruct( )。析构函数不能带有任何参数。 　  格式：function __destruct ( ){ ... ... }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;?
+//创建一个人类
+class Person
+       {
+              //下面是人的成员属性
+              var$name;  //人的名子
+              var$sex;    //人的性别
+              var$age;    //人的年龄
+
+              //定义一个构造方法参数为姓名$name、性别$sex和年龄$age
+              function__construct($name, $sex, $age)
+              {
+                     //通过构造方法传进来的$name给成员属性$this-&amp;gt;name赋初使值
+                     $this-&amp;gt;name=$name;
+                     //通过构造方法传进来的$sex给成员属性$this-&amp;gt;sex赋初使值
+                     $this-&amp;gt;sex=$sex;
+                     //通过构造方法传进来的$age给成员属性$this-&amp;gt;age赋初使值
+                     $this-&amp;gt;age=$age;
+              }
+
+            //这个人的说话方法
+            function say()
+            {
+                  echo&quot;我的名子叫：&quot;.$this-&amp;gt;name.&quot; 性别：&quot;.$this-&amp;gt;sex.&quot;我的年龄是：&quot;.$this-&amp;gt;age.&quot;&amp;lt;br&amp;gt;&quot;;
+            }
+
+                  //这是一个析构函数，在对象销毁前调用
+                  function __destruct()
+                  {
+                         echo “再见”.$this-&amp;gt;name.”&amp;lt;br&amp;gt;”;
+                  }
+        }
+
+        //通过构造方法创建3个对象$p1、p2、$p3,分别传入三个不同的实参为姓名、性别和年龄
+        $p1=new Person(“张三”，”男”, 20);
+        $p2=new Person(“李四”，”女”, 30);
+        $p3=new Person(“王五”，”男”, 40);
+
+        //下面访问$p1对象中的说话方法
+        $p1-&amp;gt;say();
+        //下面访问$p2对象中的说话方法
+        $p2-&amp;gt;say();
+        //下面访问$p3对象中的说话方法
+        $p3-&amp;gt;say();
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;输出结果为：&lt;/p&gt;
+
+&lt;p&gt;我的名子叫：张三 性别：男 我的年龄是：20&lt;br /&gt;
+我的名子叫：李四 性别：女 我的年龄是：30&lt;br /&gt;
+我的名子叫：王五 性别：男 我的年龄是：40&lt;/p&gt;
+
+&lt;p&gt;再见张三&lt;br /&gt;
+再见李四&lt;br /&gt;
+再见王五&lt;/p&gt;
+
+&lt;p&gt;五、封装性&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;封装性是面象对象编程中的三大特性之一，封装性就是把对象的属性和服务结合成一个独立的相同单位，并尽可能隐蔽对象的内部细节，包含两个含义:1.把对象的全部属性和全部服务结合在一起，形成一个不可分割的独立单位（即对象）。2.信息隐蔽，即尽可能隐蔽对象的内部细节，对外形成一个边界〔或者说形成一道屏障〕，只保留有限的对外接口使之与外部发生联系。
+
+封装的原则在软件上的反映是：要求使对象以外的部分不能随意存取对象的内部数据（属性），从而有效的避免了外部错误对它的&quot;交叉感染&quot;，使软件错误能够局部化，大大减少查错和排错的难度。
+
+用个实例来说明吧，假如某个人的对象中有年龄和工资等属性，像这样个人隐私的属性是不想让其它人随意就能获得到的，如果你不使用封装，那么别人想知道就能得到，但是如果你封装上之后别人就没有办法获得封装的属性， 除非你自己把它说出去，否则别人没有办法得到。
+
+在比如说，个人电脑都有一个密码，不想让其它人随意的登陆，在你电脑里面拷贝和粘贴。还有就是像人这个对象， 身高和年龄的属性， 只能是自己来增涨，不可以让别人随意的赋值等等。
+
+使用private这个关键字来对属性和方法进行封装：
+
+原来的成员:
+
+var $name;                   //声明人的姓名
+var $sex;                      //声明人的性别
+var $age;                      //声明人的年龄
+function run(){ …….}
+
+改成封装的形式：
+
+private $name;                            //把人的姓名使用private关键字进行封装
+private $sex;                                    //把人的性别使用private关键字进行封装
+private $age;                                    //把人的年龄使用private关键字进行封装
+private function  run(){……}          //把人的走路方法使用private关键字进行封装
+
+注意：只要是成员属性前面有其它的关键字就要去掉原有的关键字”var”.
+
+通过private就可以把人的成员（成员属性和成员方法）封装上了。封装上的成员就不能被类外面直接访问了，只有对象内部自己可以访问；下面的代码会产生错误：
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class Person
+        {
+              //下面是人的成员属性
+              private $name;   //人的名子，被private封装上了
+              private $sex;    //人的性别, 被private封装上了
+              private $age;    //人的年龄, 被private封装上了
+
+              //这个人可以说话的方法
+              function say()
+              {
+                     echo &quot;我的名子叫：&quot;.$this-&amp;gt;name.&quot;性别：&quot;.$this-&amp;gt;sex.&quot;我的年龄是：&quot;.$this-&amp;gt;age.&quot;&amp;lt;br&amp;gt;&quot;;
+              }
+
+              //这个人可以走路的方法, 被private封装上了
+              private function run()
+              {
+                     echo&quot;这个人在走路&quot;;
+              }
+       }
+       //实例化一个人的实例对象
+       $p1=new Person();
+
+       //试图去给私有的属性赋值， 结果会发生错误
+
+       $p1-&amp;gt;name=&quot;张三&quot;;
+       $p1-&amp;gt;sex=&quot;男&quot;;
+       $p1-&amp;gt;age=20;
+
+       //试图去打印私有的属性， 结果会发生错误
+
+       echo$p1-&amp;gt;name.”&amp;lt;br&amp;gt;”;
+       echo$p1-&amp;gt;sex.”&amp;lt;br&amp;gt;”;
+       echo$p1-&amp;gt;age.”&amp;lt;br&amp;gt;”
+
+       //试图去打印私有的成员方法， 结果会发生错误
+       $p1-&amp;gt;run();
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;输出结果为：&lt;/p&gt;
+
+&lt;p&gt;Fatal error:Cannot access private property Person::$name&lt;br /&gt;
+Fatal error:Cannot access private property Person::$sex&lt;br /&gt;
+Fatal error:Cannot access private property Person::$age&lt;br /&gt;
+Fatal error:Cannot access private property Person::$name&lt;br /&gt;
+Fatal error:Call to private method Person::run() from context&lt;/p&gt;
+
+&lt;p&gt;从上面的实例可以看到， 私有的成员是不能被外部访问的， 因为私有成员只能在本对象内部自己访问，比如，$p1这个对象自己想把他的私有属性说出去，在say()这个方法里面访问了私有属性，这样是可以。（没有加任何访问控制，默认的是public的，任何地方都可以访问）&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//这个人可以说话的方法, 说出自己的私有属性，在这里也可以访问私有方法
+
+function say()
+    {
+        echo&quot;我的名子叫：&quot;.$this-&amp;gt;name.&quot; 性别：&quot;.$this-&amp;gt;sex.&quot;我的年龄是：&quot;.$this-&amp;gt;age.&quot;&amp;lt;br&amp;gt;&quot;;
+        //在这里也可以访问私有方法
+        //$this-&amp;gt;run();
+    }
+
+
+因为成员方法say()是公有的， 所以我们在类的外部调用say()方法是可以的，改变上面的代码；
+
+class Person
+
+{
+
+              //下面是人的成员属性
+
+              private $name; //人的名子，被private封装上了
+
+              private $sex;    //人的性别, 被private封装上了
+
+              private $age;    //人的年龄, 被private封装上了
+
+              //定义一个构造方法参数为私有的属性姓名$name、性别$sex和年龄$age进行赋值
+              function__construct($name, $sex, $age)
+              {
+                     //通过构造方法传进来的$name给私有成员属性$this-&amp;gt;name赋初使值
+                     $this-&amp;gt;name=$name;
+                     //通过构造方法传进来的$sex给私有成员属性$this-&amp;gt;sex赋初使值
+                     $this-&amp;gt;sex=$sex;
+                     //通过构造方法传进来的$age给私有成员属性$this-&amp;gt;age赋初使值
+                     $this-&amp;gt;age=$age;
+              }
+
+              //这个人可以说话的方法, 说出自己的私有属性，在这里也可以访问私有方法
+              function say()
+              {
+                     echo&quot;我的名子叫：&quot;.$this-&amp;gt;name.&quot; 性别：&quot;.$this-&amp;gt;sex.&quot;我的年龄是：&quot;.$this-&amp;gt;age.&quot;&amp;lt;br&amp;gt;&quot;;
+              }
+       }
+
+        //通过构造方法创建3个对象$p1、p2、$p3,分别传入三个不同的实参为姓名、性别和年龄
+
+        $p1=new Person(“张三”，”男”, 20);
+        $p2=new Person(“李四”，”女”, 30);
+        $p3=new Person(“王五”，”男”, 40);
+
+        //下面访问$p1对象中的说话方法
+       $p1-&amp;gt;say();
+       //下面访问$p2对象中的说话方法
+       $p2-&amp;gt;say();
+       //下面访问$p3对象中的说话方法
+       $p3-&amp;gt;say();
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;输出结果为：&lt;/p&gt;
+
+&lt;p&gt;我的名子叫：张三 性别：男 我的年龄是：20&lt;br /&gt;
+   我的名子叫：李四 性别：女 我的年龄是：30&lt;br /&gt;
+   我的名子叫：王五 性别：男 我的年龄是：40&lt;/p&gt;
+
+&lt;p&gt;因为构造方法是默认的公有方法（构造方法不要设置成私有的），所以在类的外面可以访问到，这样就可以使用构造方法创建对象， 另外构造方法也是类里面的函数，所以可以用构造方法给私有的属性赋初值。Say()的方法是默认公有的， 所以在外面也可以访问的到， 说出他自己的私有属性。&lt;/p&gt;
+
+&lt;p&gt;从上面的例子中我们可以看到， 私有的成员只能在类的内部使用， 不能被类外部直接来存取， 但是在类的内部是有权限访问的， 所以有时候我们需要在类的外面给私有属性赋值和读取出来，也就是给类的外部提供一些可以存取的接口，上例中构造方法就是一种赋值的形式， 但是构造方法只是在创建对象的时候赋值，如果我们已经有一个存在的对象了，想对这个存在的对象赋值， 这个时候，如果你还使用构造方法传值的形式传值， 那么就创建了一个新的对象，并不是这个已存在的对象了。所以我们要对私有的属性做一些可以被外部存取的接口，目的就是可以在对象存在的情况下，改变和存取属性的值，但要注意，只有需要让外部改变的属性才这样做，不想让外面访问的属性是不做这样的接口的，这样就能达到封装的目的，所有的功能都是对象自己来完成，给外面提供尽量少的操作。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;如果给类外部提供接口，可以为私有属性在类外部提供设置方法和获取方法，来操作私有属性.例如： ```    prvate $age;   //私有的属性年龄
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;functionsetAge($age)  //为外部提供一个公有设置年龄的方法&lt;br /&gt;
+   {&lt;br /&gt;
+          if($age&amp;lt;0|| $age&amp;gt;130) //在给属性赋值的时候，为了避免非法值设置给属性&lt;br /&gt;
+          return;&lt;br /&gt;
+          $this-&amp;gt;age=$age;&lt;br /&gt;
+   }&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;functiongetAge()             //为外部提供一个公有获取年龄的方法
+{
+       return($this-&amp;gt;age);
+} ``` 上面的方法是为一个成员属性设置和获取值， 当然你也可以为每个属性用同样的方法对其进行赋值和取值的操作，完成在类外部的存取工作。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;六、__set() __get() __isset() __unset()四个方法的应用&lt;/p&gt;
+
+&lt;p&gt;一般来说，总是把类的属性定义为private，这更符合现实的逻辑。但是，对属性的读取和赋值操作是非常频繁的，因此在PHP5中，预定义了两个函数”__get()”和”__set()”来获取和赋值其属性,以及检查属性的”__isset()”和删除属性的方法”__unset()”。&lt;/p&gt;
+
+&lt;p&gt;之前，我们为每个属性做了设置和获取的方法，在PHP5中给我们提供了专门为属性设置值和获取值的方法，”__set()”和“__get()”这两个方法，这两个方法不是默认存在的，而是我们手工添加到类里面去的，像构造方法(__construct())一样, 类里面添加了才会存在，可以按下面的方式来添加这两个方法，当然也可以按个人的风格来添加：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//__get()方法用来获取私有属性
+
+    function __get($property_name)
+    {
+        if(isset($this-&amp;gt;$property_name)) {
+              return($this-&amp;gt;$property_name);
+        }else {
+              return(NULL);
+        }
+    }
+
+    //__set()方法用来设置私有属性
+    function __set($property_name,$value)
+    {
+        $this-&amp;gt;$property_name= $value;
+    }
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;__get()方法：这个方法用来获取私有成员属性值的,有一个参数， 参数传入你要获取的成员属性的名称，返回获取的属性值，这个方法不用我们手工的去调用， 是在直接获取私有属性的时候自动调用的。因为私有属性已经被封装上了，是不能直接获取值的（比如：”echo $p1-&amp;gt;name” 这样直接获取是错误的），但是如果你在类里面加上了这个方法，在使用”echo $p1-&amp;gt;name” 这样的语句直接获取值的时候就会自动调用__get($property_name)方法，将属性name传给参数$property_name，通过这个方法的内部执行，返回我们传入的私有属性的值。&lt;/p&gt;
+
+&lt;p&gt;__set()方法：这个方法用来为私有成员属性设置值的，有两个参数，第一个参数为你要为设置值的属性名，第二个参数是要给属性设置的值，没有返回值。这个方法同样不用我们手工去调用，是在直接设置私有属性值的时候自动调用的，同样属性私有的已经被封装上了，如果没有__set()这个方法，是不允许的， 比如：”$this-&amp;gt;name=’zhangsan’ , 这样会出错，但是如果你在类里面加上了__set($property_name, $value)这个方法，在直接给私有属性赋值的时候，就会自动调用它，把属性比如name传给$property_name,把要赋的值”zhangsan”传给$value，通过这个方法的执行，达到赋值的目的， 为了不传入非法的值，还可以在这个方法给做一下判断。代码如下：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;?php
+       classPerson
+       {
+              //下面是人的成员属性， 都是封装的私有成员
+              private $name;  //人的名子
+              private $sex;    //人的性别
+              private $age;   //人的年龄
+
+              //__get()方法用来获取私有属性
+
+              function __get($property_name)
+              {
+                  echo &quot;在直接获取私有属性值的时候，自动调用了这个__get()方法&amp;lt;br&amp;gt;&quot;;
+             if(isset($this-&amp;gt;$property_name)) {
+                            return($this-&amp;gt;$property_name);
+                      }else {
+                            return(NULL);
+                     }
+              }
+
+              //__set()方法用来设置私有属性
+
+              function __set($property_name, $value)
+              {
+                     echo &quot;在直接设置私有属性值的时候，自动调用了这个__set()方法为私有属性赋值&amp;lt;br&amp;gt;&quot;;
+                     $this-&amp;gt;$property_name= $value;
+              }
+       }
+
+       $p1=newPerson();
+
+       //直接为私有属性赋值的操作， 会自动调用__set()方法进行赋值
+
+       $p1-&amp;gt;name=&quot;张三&quot;;
+       $p1-&amp;gt;sex=&quot;男&quot;;
+       $p1-&amp;gt;age=20;
+
+       //直接获取私有属性的值， 会自动调用__get()方法，返回成员属性的值
+       echo &quot;姓名：&quot;.$p1-&amp;gt;name.&quot;&amp;lt;br&amp;gt;&quot;;
+       echo &quot;性别：&quot;.$p1-&amp;gt;sex.&quot;&amp;lt;br&amp;gt;&quot;;
+       echo &quot;年龄：&quot;.$p1-&amp;gt;age.&quot;&amp;lt;br&amp;gt;&quot;;
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;程序执行结果：&lt;/p&gt;
+
+&lt;p&gt;在直接设置私有属性值的时候， 自动调用了这个__set()方法为私有属性赋值&lt;br /&gt;
+在直接设置私有属性值的时候， 自动调用了这个__set()方法为私有属性赋值&lt;br /&gt;
+在直接设置私有属性值的时候， 自动调用了这个__set()方法为私有属性赋值&lt;br /&gt;
+在直接获取私有属性值的时候，自动调用了这个__get()方法&lt;br /&gt;
+姓名：张三&lt;br /&gt;
+在直接获取私有属性值的时候，自动调用了这个__get()方法&lt;br /&gt;
+性别：男&lt;br /&gt;
+在直接获取私有属性值的时候，自动调用了这个__get()方法&lt;br /&gt;
+年龄：20&lt;/p&gt;
+
+&lt;p&gt;以上代码如果不加上__get()和__set()方法，程序就会出错，因为不能在类的外部操作私有成员，而上面的代码是通过自动调用__get()和__set()方法来帮助我们直接存取封装的私有成员的。&lt;/p&gt;
+
+&lt;p&gt;七、类的继承&lt;br /&gt;
+    继承作为面向对象的三个重要特性的一个方面，在面向对象的领域有着及其重要的作用，好像没听说哪个面向对象的语言不支持继承。继承是php5面象对象程序设计的重要特性之一，它是指建立一个新的派生类，从一个或多个先前定义的类中继承数据和函数，而且可以重新定义或加进新数据和函数，从而建立了类的层次或等级。说的简单点就是，继承性是子类自动共享父类数据结构和方法的机制，这是类之间的一种关系。在定义和实现一个类的时候，可以在一个已经存在的类的基础之上来进行，把这个已经存在的类所定义的内容作为自己的内容，并加入若干新的内容。比如你现在已经有一个“人”这个类了，这个类里面有两个成员属性“姓名和年龄”以及还有两个成员方法“说话的方法和走路的方法“，如果现在程序需要一个学生的类， 因为学生的也是人， 所以学生也有成员属性“姓名和年龄”以及成员方法“说话的方法和走路的方法“，这个时候你就可以让学生类来继承人这个类，继承之后，学生类就会把人类里面的所有的属性都继承过来， 就不用你再去重新声明一遍这些成员属性和方法了， 因为学生类里面还有所在学校的属性和学习的方法，所以在你做的学生类里面有继承自人类里面的属性和方法之外在加上学生特有的”所在学校属性“和”学习的方法“, 这样一个学生类就声明完成了， 继函我们也可以叫作“扩展”, 从上面我们就可以看出，学生类对人类进行了扩展，在人类里原有两个属性和两个方法的基础上加上一个属性和一个方法扩展出来一个新的学生类。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;通过继承机制，可以利用已有的数据类型来定义新的数据类型。所定义的新的数据类型不仅拥有新定义的成员，而且还同时拥有旧的成员。我们称已存在的用来派生新类的类为基类，又称为父类以及超类。由已存在的类派生出的新类称为派生类，又称为子类。
+
+在软件开发中，类的继承性使所建立的软件具有开放性、可扩充性，这是信息组织与分类的行之有效的方法，它简化了对象、类的创建工作量，增加了代码的可重性。采用继承性，提供了类的规范的等级结构。通过类的继承关系，使公共的特性能够共享，提高了软件的重用性。
+
+在C++语言中，一个派生类可以从一个基类派生，也可以从多个基类派生。从一个基类派生的继承称为单继承；从多个基类派生的继承称为多继承。
+
+
+但是在PHP和Java语言里面没有多继承，只有单继承，也就是说，一个类只能直接从一个类中继承数据，这就是我们所说的单继承。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;例如：&lt;/p&gt;
+
+&lt;p&gt;下面是“人”类的抽象&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//定义一个“人”类做为父类
+
+class Person
+
+    {
+      //下面是人的成员属性
+      var $name; //人的名子
+      var $sex;   //人的性别
+      var $age;    //人的年龄
+
+    //定义一个构造方法参数为属性姓名$name、性别$sex和年龄$age进行赋值
+    function__construct($name, $sex, $age)
+    {
+         $this-&amp;gt;name=$name;
+         $this-&amp;gt;sex=$sex;
+         $this-&amp;gt;age=$age;
+    }
+
+          //这个人可以说话的方法, 说出自己的属性
+          function say()
+          {
+                 echo&quot;我的名子叫：&quot;.$this-&amp;gt;name.&quot; 性别：&quot;.$this-&amp;gt;sex.&quot;我的年龄是：&quot;.$this-&amp;gt;age.&quot;&amp;lt;br&amp;gt;&quot;;
+          }
+    }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;通过上面“Student“类的定义， Student类通过使用”extends”这个关键字把Person 类里的所有成员属性和成员方法都继承过来了, 并扩展了一个所在学校成员属性”school”，和一个学习方法“study()”.  现在子类”Student”里面和使用这个类实例出来的对象都具有如下的属性和方法:&lt;br /&gt;
+  学生类”Student”里面的成员属性有：&lt;br /&gt;
+  姓名：name;&lt;br /&gt;
+  年龄：age;&lt;br /&gt;
+  性别：sex;&lt;br /&gt;
+  学校：school;&lt;br /&gt;
+  学生类”Student”里面的成员方法有：&lt;br /&gt;
+  说话方法：say();&lt;br /&gt;
+  学习方法：study();&lt;/p&gt;
+
+&lt;p&gt;通过上面类继承的使用简化了对象、类的创建工作量，增加了代码的可重性。但是从上面这一个例子上中“可重用性”以及其它的继承性所带来的影响，我们看的还不是特别的明显，你扩展的去想一下，人有无数个岗位，比如上面的学生还有老师，工程师，医生，工人等，很多很多，如果每个类都定义“人“都共同具有的属性和方法， 想一想会有很大的工作量， 这些属性和方法都可以从“Person”人类里面继承过来。&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 25 May 2014 00:00:00 +0800</pubDate>
+        <link>http://www.ltybr.com///php/2014/05/25/phpthreemo.html</link>
+        <guid isPermaLink="true">http://www.ltybr.com///php/2014/05/25/phpthreemo.html</guid>
+        
+        <category>epel</category>
+        
+        
+        <category>php</category>
+        
+      </item>
+    
+      <item>
+        <title>mysql 主从复制配置</title>
+        <description>&lt;p&gt;      作为互联网公司的信息安全从业人员经常要处理撞库扫号事件，产生撞库扫号的根本原因是一些企业发生了信息泄露事件，且这些泄露数据未加密或者加密方式比较弱，导致黑客可以还原出原始的用户密码。目前已经曝光的信息泄露事件至少上百起，其中包括多家一线互联网公司，泄露总数据超过10亿条。本文作者就职于携程技术中心信息安全部，文中他将分享用户密码的加密方式以及主要的破解方法。&lt;/p&gt;
+
+&lt;p&gt;      要完全防止信息泄露是非常困难的事情，除了防止黑客外，还要防止内部人员泄密。但如果采用合适的算法去加密用户密码，即使信息泄露出去，黑客也无法还原出原始的密码（或者还原的代价非常大）。也就是说我们可以将工作重点从防止泄露转换到防止黑客还原出数据。下面我们将分别介绍用户密码的加密方式以及主要的破解方法。&lt;/p&gt;
+
+&lt;h2&gt;用户密码加密：&lt;/h2&gt;
+
+&lt;p&gt;      用户密码保存到数据库时，常见的加密方式有哪些，我们该采用什么方式来保护用户的密码呢？以下几种方式是常见的密码保存方式：&lt;/p&gt;
+
+&lt;p&gt;1.直接明文保存，比如用户设置的密码是“123456”，直接将“123456”保存在数据库中，这种是最简单的保存方式，也是最不安全的方式。但实际上不少互联网公司，都可能采取的是这种方式。&lt;/p&gt;
+
+&lt;p&gt;2.使用对称加密算法来保存，比如3DES、AES等算法，使用这种方式加密是可以通过解密来还原出原始密码的，当然前提条件是需要获取到密钥。不过既然大量的用户信息已经泄露了，密钥很可能也会泄露，当然可以将一般数据和密钥分开存储、分开管理，但要完全保护好密钥也是一件非常复杂的事情，所以这种方式并不是很好的方式。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.ltybr.com/static/img/blog/framework/user1.jpg&quot; alt=&quot;User1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;3.使用MD5、SHA1等单向HASH算法保护密码，使用这些算法后，无法通过计算还原出原始密码，而且实现比较简单，因此很多互联网公司都采用这种方式保存用户密码，曾经这种方式也是比较安全的方式，但随着彩虹表技术的兴起，可以建立彩虹表进行查表破解，目前这种方式已经很不安全了。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.ltybr.com/static/img/blog/framework/user2.jpg&quot; alt=&quot;User1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;4.特殊的单向HASH算法，由于单向HASH算法在保护密码方面不再安全，于是有些公司在单向HASH算法基础上进行了加盐、多次HASH等扩展，这些方式可以在一定程度上增加破解难度，对于加了“固定盐”的HASH算法，需要保护“盐”不能泄露，这就会遇到“保护对称密钥”一样的问题，一旦“盐”泄露，根据“盐”重新建立彩虹表可以进行破解，对于多次HASH，也只是增加了破解的时间，并没有本质上的提升。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.ltybr.com/static/img/blog/framework/user3.jpg&quot; alt=&quot;User1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;5.PBKDF2算法，该算法原理大致相当于在HASH算法基础上增加随机盐，并进行多次HASH运算，随机盐使得彩虹表的建表难度大幅增加，而多次HASH也使得建表和破解的难度都大幅增加。使用PBKDF2算法时，HASH算法一般选用sha1或者sha256，随机盐的长度一般不能少于8字节，HASH次数至少也要1000次，这样安全性才足够高。一次密码验证过程进行1000次HASH运算，对服务器来说可能只需要1ms，但对于破解者来说计算成本增加了1000倍，而至少8字节随机盐，更是把建表难度提升了N个数量级，使得大批量的破解密码几乎不可行，该算法也是美国国家标准与技术研究院推荐使用的算法。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.ltybr.com/static/img/blog/framework/user4.jpg&quot; alt=&quot;User1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;6.bcrypt、scrypt等算法，这两种算法也可以有效抵御彩虹表，使用这两种算法时也需要指定相应的参数，使破解难度增加。&lt;/p&gt;
+
+&lt;p&gt;下表对比了各个算法的特性：&lt;/p&gt;
+
+&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;623&quot; interlaced=&quot;enabled&quot;&gt;&lt;colgroup&gt;&lt;col width=&quot;116&quot; style=&quot;;width:116px&quot; /&gt;&lt;col width=&quot;132&quot; style=&quot;;width:132px&quot; /&gt;&lt;col width=&quot;121&quot; style=&quot;;width:121px&quot; /&gt;&lt;col width=&quot;81&quot; style=&quot;;width:81px&quot; /&gt;&lt;col width=&quot;172&quot; style=&quot;;width:172px&quot; /&gt;&lt;/colgroup&gt;&lt;tbody&gt;&lt;tr height=&quot;20&quot; style=&quot;height:20px&quot;&gt;&lt;td height=&quot;20&quot; width=&quot;116&quot;&gt;算法&lt;/td&gt;&lt;td width=&quot;132&quot; style=&quot;&quot;&gt;特点&lt;/td&gt;&lt;td width=&quot;121&quot; style=&quot;&quot;&gt;有效破解方式&lt;/td&gt;&lt;td width=&quot;81&quot; style=&quot;&quot;&gt;破解难度&lt;/td&gt;&lt;td width=&quot;172&quot; style=&quot;&quot;&gt;其它&lt;/td&gt;&lt;/tr&gt;&lt;tr height=&quot;20&quot; style=&quot;height:20px&quot;&gt;&lt;td height=&quot;20&quot;&gt;明文保存&lt;/td&gt;&lt;td&gt;实现简单&lt;/td&gt;&lt;td&gt;无需破解&lt;/td&gt;&lt;td&gt;简单&lt;/td&gt;&lt;td&gt;&lt;br /&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr height=&quot;20&quot; style=&quot;height:20px&quot;&gt;&lt;td height=&quot;20&quot;&gt;对称加密&lt;/td&gt;&lt;td&gt;可以解密出明文&lt;/td&gt;&lt;td&gt;获取密钥&lt;/td&gt;&lt;td&gt;中&lt;/td&gt;&lt;td&gt;需要确保密钥不泄露&lt;/td&gt;&lt;/tr&gt;&lt;tr height=&quot;20&quot; style=&quot;height:20px&quot;&gt;&lt;td height=&quot;20&quot;&gt;单向HASH&lt;/td&gt;&lt;td&gt;不可解密&lt;/td&gt;&lt;td&gt;碰撞、彩虹表&lt;/td&gt;&lt;td&gt;中&lt;/td&gt;&lt;td&gt;&lt;br /&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr height=&quot;20&quot; style=&quot;height:20px&quot;&gt;&lt;td height=&quot;20&quot;&gt;特殊HASH&lt;/td&gt;&lt;td&gt;不可解密&lt;/td&gt;&lt;td&gt;碰撞、彩虹表&lt;/td&gt;&lt;td&gt;中&lt;/td&gt;&lt;td&gt;需要确保“盐”不泄露&lt;/td&gt;&lt;/tr&gt;&lt;tr height=&quot;20&quot; style=&quot;height:20px&quot;&gt;&lt;td height=&quot;20&quot;&gt;Pbkdf2&lt;/td&gt;&lt;td&gt;不可解密&lt;/td&gt;&lt;td&gt;无&lt;/td&gt;&lt;td&gt;难&lt;/td&gt;&lt;td&gt;需要设定合理的参数&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;tr&gt;
+## 用户密码破解
+
+用户密码破解需要针对具体的加密方式来实施，如果使用对称加密，并且算法足够安全（比如AES），必须获取到密钥才能解密，没有其它可行的破解方式。
+
+如果采用HASH算法（包括特殊HASH），一般使用彩虹表的方式来破解，彩虹表的原理是什么呢？我们先来了解下如何进行HASH碰撞。单向HASH算法由于不能进行解密运算，只能通过建表、查表的方式进行碰撞，即将常用的密码及其对应的HASH值全计算出来并存储，当获取到HASH值是，直接查表获取原始密码，假设用MD5算法来保护6位数字密码，可以建如下表：
+
+&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;717&quot; interlaced=&quot;enabled&quot;&gt;&lt;colgroup&gt;&lt;col width=&quot;168&quot; style=&quot;;width:168px&quot; /&gt;&lt;col width=&quot;549&quot; style=&quot;;width:549px&quot; /&gt;&lt;/colgroup&gt;&lt;tbody&gt;&lt;tr height=&quot;24&quot; style=&quot;height:24px&quot;&gt;&lt;td height=&quot;24&quot; width=&quot;168&quot; style=&quot;background-color: rgb(187, 187, 187);&quot;&gt;原始密码&lt;/td&gt;&lt;td width=&quot;549&quot; style=&quot;background-color: rgb(187, 187, 187);&quot;&gt;MD5值&lt;/td&gt;&lt;/tr&gt;&lt;tr height=&quot;93&quot; style=&quot;height:93px&quot;&gt;&lt;td height=&quot;93&quot; width=&quot;168&quot;&gt;0&lt;/td&gt;&lt;td width=&quot;549&quot; style=&quot;&quot;&gt;670B14728AD9902AECBA32E22FA4F6BD&lt;/td&gt;&lt;/tr&gt;&lt;tr height=&quot;92&quot; style=&quot;height:92px&quot;&gt;&lt;td height=&quot;92&quot; width=&quot;168&quot; style=&quot;background-color: #FAFBFB&quot;&gt;1&lt;/td&gt;&lt;td width=&quot;549&quot; style=&quot;background-color: #FAFBFB&quot;&gt;04FC711301F3C784D66955D98D399AFB&lt;/td&gt;&lt;/tr&gt;&lt;tr height=&quot;24&quot; style=&quot;height:24px&quot;&gt;&lt;td height=&quot;24&quot; width=&quot;168&quot;&gt;…&lt;/td&gt;&lt;td width=&quot;549&quot; style=&quot;&quot;&gt;…&lt;/td&gt;&lt;/tr&gt;&lt;tr height=&quot;92&quot; style=&quot;height:92px&quot;&gt;&lt;td height=&quot;92&quot; width=&quot;168&quot; style=&quot;background-color: #FAFBFB&quot;&gt;999999&lt;/td&gt;&lt;td width=&quot;549&quot; style=&quot;background-color: #FAFBFB&quot;&gt;52C69E3A57331081823331C4E69D3F2E&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+全表共100W条记录，因为数据量不大，这种情况建表、查表都非常容易。但是当密码并不是6位纯数字密码，而是数字、大小写字母结合的10位密码时，建立一个这样的表需要（26+26+10）^ 10 ≈ 83亿亿（条记录），存储在硬盘上至少要占用2000W TB的空间，这么大的存储空间，成本太大，几乎不可行。有什么办法可以减少存储空间？一种方法是“预计算哈希链”，“预计算哈希链”可以大幅减少HASH表的存储空间，但相应的增加了查表时的计算量，其原理大致如下：
+
+
+建表过程：
+
+![User1](http://www.ltybr.com/static/img/blog/framework/user5.jpg)
+
+先对原始数据“000000”进行一次HASH运算得到“670B1E”，再对HASH值进行一次R运算，R是一个定制的算法可以将HASH值映射到明文空间上（这里我们的明文空间是000000~999999），R运算后得到“283651”，再对“283651”进行hash运算得到“1A99CD”，然后在进行R运算得到“819287”，如此重复多次，得到一条哈希链。然后再选用其它原始数据建立多条哈希链。最终仅将链头和链尾保存下来，中间节点全都去掉。
+
+查表过程：假设拿到了一条HASH值“670B1E”，首先进行一次R运算，得到了“283651”，查询所有链尾是否有命中，如果没有，则再进行一次HASH、一次R，得到了“819287”，再次所有链尾，可以得到看出已经命中。这样我们就可以基本确认“670B1E”对应的明文就在这条链上，然后我们把这条链的生成过程进行重新计算，计算过程中可以发现“000000”的HASH值就是“670B1E”，这样就完成了整个查表过程。这种表就是“预计算哈希链”。这种方式存在一个问题，多条链之间可能存在大量的重复数据，如下图所示：
+
+![User1](http://www.ltybr.com/static/img/blog/framework/user6.jpg)
+
+为了解决这个问题，我们将R算法进行扩展，一条链上的多次R运算采用不同的算法，如下图：
+
+![User1](http://www.ltybr.com/static/img/blog/framework/user7.jpg)
+
+一条链上的每个R算法都不一样，就像彩虹的每层颜色一样，因此取名的为彩虹表。
+
+当然彩虹表除了可以用户破解HASH算法外，理论上还可以用于破解对称加密算法，比如DES算法，由于DES算法密钥比较短，建立彩虹表破解是完全可行的；但对于AES算法，由于密钥比较长，建表几乎不可行（需要耗时N亿年）。
+
+## 小结
+
+采用PBKDF2、bcrypt、scrypt等算法可以有效抵御彩虹表攻击，即使数据泄露，最关键的“用户密码”仍然可以得到有效的保护，黑客无法大批量破解用户密码，从而切断撞库扫号的根源。当然，对于已经泄露的密码，还是需要用户尽快修改密码，不要再使用已泄露的密码。
+&lt;/tr&gt;
+</description>
+        <pubDate>Tue, 20 May 2014 00:00:00 +0800</pubDate>
+        <link>http://www.ltybr.com///framework/2014/05/20/mysql-master-slave.html</link>
+        <guid isPermaLink="true">http://www.ltybr.com///framework/2014/05/20/mysql-master-slave.html</guid>
+        
+        <category>小记</category>
+        
+        
+        <category>Framework</category>
+        
+      </item>
+    
+      <item>
+        <title>PHP学习&lt;3&gt;</title>
+        <description>
+&lt;p&gt;####&lt;font color=&quot;red&quot;&gt;上传的原理：&lt;/font&gt;文件由客户端通过post方式移动到服务器端临时文件夹里，再从临			 时文件夹里上传到服务器端指定的目录里的过程成为文件上传。&lt;/p&gt;
+
+&lt;p&gt;实现步骤：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;首先在表单页面将提交方式声明成post没加上文件上传头信息如下图&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;//styles/images/headinfo.png&quot; alt=&quot;headinfo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;在action指定的文件里用$_FILES数组来接收上传信息，设定文件上传的目录，通过文件上传移动函数move_uploaded_file()移动文件到服务器端的文件夹里。&lt;/p&gt;
+
+&lt;p&gt;其中$_FILES数组中包含如下信息：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;//styles/images/imginfo.png&quot; alt=&quot;headinfo&quot; /&gt;&lt;/p&gt;
+
+&lt;font color=&quot;red&quot;&gt;文件上传相关函数:&lt;/font&gt;
+
+&lt;p&gt;Move_uploaded_file()：将上传文件移动到指定的位置，如果成功则返回true，否则返回false&lt;/p&gt;
+
+&lt;p&gt;####&lt;font color=&quot;red&quot;&gt;分页的原理:&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;####将数据从数据库中按照limit关键字进行分段查询，从而减轻数&lt;/p&gt;
+
+&lt;p&gt;###分页步骤:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;查询出参与分页数据的总记录数&lt;/li&gt;
+  &lt;li&gt;设定每页显示多少条数据&lt;/li&gt;
+  &lt;li&gt;计算出总页数：ceil（总记录数/每页显示的条数）&lt;/li&gt;
+  &lt;li&gt;获取当前页：$page=$_GET[‘page’]?$_GET[‘page’]:1;&lt;/li&gt;
+  &lt;li&gt;计算偏移量：(当前页-1)*每页显示的条数&lt;/li&gt;
+  &lt;li&gt;查询数据：select * from 表名 limit 偏移量,每页显示的条数&lt;/li&gt;
+  &lt;li&gt;输出上一页、下一页、首页、尾页的超链接&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;###&lt;font color=&quot;red&quot;&gt;ajax技术：&lt;/font&gt;ajax是一种技术，它是由div+css javascript和xml技术组成。作用：异步存取，局部刷新，能实现无页面刷新的效果&lt;/p&gt;
+
+&lt;p&gt;####&lt;font color=&quot;red&quot;&gt;ajax的优缺点：&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;Ajax优点：可以减轻服务器处理数据的压力，实现无页面刷新，增强用户体验。&lt;/p&gt;
+
+&lt;p&gt;Ajax缺点：不利于SEO（搜索引擎）优化&lt;/p&gt;
+
+&lt;p&gt;Ajax应用场景：在页面显示大量数据，实时更新的网站上，实现局部刷新&lt;/p&gt;
+
+&lt;p&gt;###&lt;font color=&quot;red&quot;&gt;ajax的运行原理：&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;客户端浏览器通过ajax引擎发送请求，服务器接收请求后通过php访问数据库处理数据，处理完的数据通过ajax引擎响应给客户端，客户端通过js把数据放到需要的地方。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    		 客户端
+            请求  |  |  响应
+               ajax引擎
+                  |  |
+             Web服务器apache
+              访问|  |返回
+                 数据库
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;##&lt;font face=&quot;STCAIYUN&quot; color=&quot;red&quot;&gt;ajax的核心代码&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;a.ajax对象：var ajax= new XMLHttpRequest();&lt;/p&gt;
+
+&lt;p&gt;b.ajax属性&lt;br /&gt;
+   1)readyState：ajax对象的准备状态，状态从0—-4发生变化&lt;/p&gt;
+
+&lt;p&gt;　　	0：请求未初始化&lt;br /&gt;
+　　	1：服务器连接已建立&lt;br /&gt;
+　　	2：请求已接收&lt;br /&gt;
+　　	3：请求处理中&lt;br /&gt;
+　　	4：请求已完成且响应已就绪&lt;/p&gt;
+
+&lt;p&gt;2)responseText：响应文本&lt;/p&gt;
+
+&lt;p&gt;3)status状态： 值为200表示处理成功 值为404表示没有找到处理文件&lt;/p&gt;
+
+&lt;p&gt;c.ajax事件 onreadystatechange&lt;/p&gt;
+
+&lt;p&gt;d.ajax方法&lt;/p&gt;
+
+&lt;p&gt;1)ajax.open()：与服务器建立连接（get（提交方式 url（地址）&lt;br /&gt;
+  true（异步））&lt;/p&gt;
+
+&lt;p&gt;2)ajax.send()：处理请求&lt;/p&gt;
+
+&lt;p&gt;例如：&lt;/p&gt;
+
+&lt;p&gt;Get方式请求：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//1.创建ajax对象
+var ajax= new XMLHttpRequest();
+//2.ajax事件
+ajax.onreadystatechange = function(){
+if(ajax.readyState ==4) {
+//处理语句
+}
+}
+//3.与服务器建立连接
+ajax.open(&#39;get&#39;,url,false);
+//4. 服务器处理请求
+ajax.send(null);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Post方式请求：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;//创建ajax对象
+var ajax= new XMLHttpRequest();
+//ajax事件
+ajax.onreadystatechange = function(){
+if(ajax.readyState ==4)   {
+}
+}
+//与服务器建立连接
+ajax.open(&#39;post&#39;,url,false);
+ajax.setRequestHeader(&#39;Content-Type&#39;,&#39;application/x-www-form-urlencoded&#39;);
+//处理请求
+ajax.send(&#39;name=&#39;+name+”&amp;amp;id=”+id);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;js实现全选全不选:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;meta charset=utf-8&amp;gt;
+全选/全不选&amp;lt;input type=&quot;checkbox&quot; id=&quot;quanxuan&quot;  onclick=&quot;checkAll()&quot;&amp;gt;&amp;lt;p&amp;gt;
+&amp;lt;input type=&quot;checkbox&quot; name=&quot;data[]&quot;&amp;gt;蔬菜&amp;lt;p&amp;gt;
+&amp;lt;input type=&quot;checkbox&quot; name=&quot;data[]&quot;&amp;gt;酒水&amp;lt;p&amp;gt;
+&amp;lt;input type=&quot;checkbox&quot; name=&quot;data[]&quot;&amp;gt;水果&amp;lt;p&amp;gt;
+&amp;lt;input type=&quot;checkbox&quot; name=&quot;data[]&quot;&amp;gt;饮料&amp;lt;p&amp;gt;
+&amp;lt;input type=&quot;checkbox&quot; name=&quot;data[]&quot;&amp;gt;香烟&amp;lt;p&amp;gt;
+&amp;lt;input type=&quot;checkbox&quot; name=&quot;data[]&quot;&amp;gt;辣条&amp;lt;p&amp;gt;
+&amp;lt;input type=&quot;checkbox&quot; name=&quot;data[]&quot;&amp;gt;烤鸭&amp;lt;p&amp;gt;
+&amp;lt;script&amp;gt;
+function checkAll(){
+	var obj=document.getElementById(&quot;quanxuan&quot;);
+    //找到所有的复选款对象
+	var data=document.getElementsByName(&quot;data[]&quot;);
+	//先判断全选框是否选中
+	if(obj.checked==true){
+		for(i in data){
+			if(data[i].checked==false){
+				data[i].checked=true
+			}
+		}
+	}else{
+		for(i in data){
+			if(data[i].checked==true){
+				data[i].checked=false
+			}
+		}
+	}
+}
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Tue, 20 May 2014 00:00:00 +0800</pubDate>
+        <link>http://www.ltybr.com///php/2014/05/20/phptwomo2.html</link>
+        <guid isPermaLink="true">http://www.ltybr.com///php/2014/05/20/phptwomo2.html</guid>
+        
+        <category>epel</category>
+        
+        
+        <category>php</category>
+        
+      </item>
+    
+      <item>
+        <title>PHP学习&lt;2&gt;</title>
+        <description>&lt;p&gt;javascript在HTML中的使用&lt;/p&gt;
+
+&lt;p&gt;使用方式：&lt;br /&gt;
+直接在html页面里面写：&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;script&amp;gt;
+//js代码
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;引入js脚本：&lt;br /&gt;
+&amp;lt;script src=’a.js’&amp;gt;&amp;lt;/script&amp;gt;将a.js脚本引入到这个html页面里来&lt;/p&gt;
+
+&lt;p&gt;执行顺序：js代码自上而下执行，和php代码执行顺序一致&lt;br /&gt;
+  区分大小写：js中的代码严格区分大小写&lt;br /&gt;
+  结束符：每行结尾的分号可有可无&lt;/p&gt;
+
+&lt;p&gt;javascript的数据类型&lt;br /&gt;
+  1．数值型：例如 3  5  1.2  3.4&lt;br /&gt;
+  2． 布尔：两个值真或假，如true或false&lt;br /&gt;
+  3． 字符串：例如: ‘I am a jelly doughnut’由一个或多个字符组成,&lt;br /&gt;
+   用单引号或双引号引起来的一系列的字符(也可以称之为一个字符串对象）&lt;br /&gt;
+  4． 空值：用关键字NULL表示．如果变量声明但是没有赋值就是这个类型&lt;br /&gt;
+  5． 未定义：用关键字undefined表示，如果变量未声明则就是未定义类型&lt;br /&gt;
+  6． 数组：用new Array( )声明的就是数据(也可以称之为一个数组对象)&lt;br /&gt;
+  7． 对象：{ }使用一对花括号声明的就是一个对象&lt;/p&gt;
+
+&lt;p&gt;js的常用函数&lt;br /&gt;
+    parseInt()：将字符串转化为数值型（整型）要转换为数字的字符串）&lt;br /&gt;
+    parseFloat()：将字符串转化为数值型(浮点型)&lt;br /&gt;
+    isNaN : 如果值是 NaN， 那么 isNaN 函数返回 true ，否则返回 false 。 使用这个函数的典型情况是检查parseInt 和 parseFloat 方法的返回值。&lt;/p&gt;
+
+&lt;p&gt;运用通过Id找对象&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    格式：document.getElementById(‘元素的id名称’)
+     例如：
+    &amp;lt;input type=’text’ id=’username’  value=’zhangsan’&amp;gt;
+    用js获取到文本框中的zhangsan
+    &amp;lt;script&amp;gt;
+    //通过id找到文本框的对象
+    Var name=document.getElementById(“username”);
+    //对象名.属性名来得到zhangsan的值
+    Alert(name.value)
+    &amp;lt;/script&amp;gt;
+    例如：
+    &amp;lt;p id=’content’&amp;gt;aaaaaaaaaaaaaa&amp;lt;/p&amp;gt;
+    用js获取到p标签间的值
+    &amp;lt;script&amp;gt;
+    //通过id找到p标签的对象
+    Var a=document.getElementById(“content”);
+    //对象名.属性名    来得到p标签的值
+    Alert(a.innerHTML)
+    &amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;javascript中的分支结构&lt;br /&gt;
+  if语句&lt;br /&gt;
+  if….else语句&lt;br /&gt;
+  if…else if..else 语句&lt;br /&gt;
+  switch….case 语句&lt;br /&gt;
+ Javascript中的循环结构&lt;br /&gt;
+  for循环语句&lt;br /&gt;
+  while循环语句&lt;br /&gt;
+  do…..while循环语句&lt;br /&gt;
+  break和continue的使用&lt;/p&gt;
+
+&lt;p&gt;Javascript中的常用事件&lt;br /&gt;
+  鼠标事件（onclick、onmouseover、onmouseout、onmousemove）&lt;br /&gt;
+  键盘事件（onkeydown、onkeyup）&lt;br /&gt;
+  表单事件（onblur、onsubmit、onchange）&lt;/p&gt;
+
+&lt;p&gt;常用正则表达式举例：&lt;br /&gt;
+    //用户名由6-18位的字母数字下划线组成，不能由数字开头&lt;br /&gt;
+    var r_name=/^[a-z_]\w{5,17}$/i&lt;br /&gt;
+    //密码长度不能少于六位&lt;br /&gt;
+    var r_pwd=/^\w{6,}$/&lt;br /&gt;
+    //所有的通用邮箱地址&lt;br /&gt;
+    var r_eamil=/^\w+@\w+(.)\w+$/&lt;br /&gt;
+    //匹配一个QQ邮箱地址&lt;br /&gt;
+    //861745122@qq.com&lt;br /&gt;
+    var r_qq_email=/^\d{5,}@qq(.)com$/&lt;br /&gt;
+    //匹配一个163的邮箱地址&lt;br /&gt;
+    var r_163_email=/^\w+@163(.)com$/&lt;br /&gt;
+    //匹配一个后缀名可能是.com|.net|.cn|.edu&lt;br /&gt;
+    var email=/^\w+@\w+(.)com|net|cn|edu$/&lt;br /&gt;
+    //要求输入有效的年龄段&lt;br /&gt;
+    var r_age=/^\d{1,2}$/&lt;br /&gt;
+    //if(age&amp;gt;=18&amp;amp;&amp;amp;age&amp;lt;=100)&lt;br /&gt;
+    //验证手机号:11位  13 15 18开头&lt;br /&gt;
+    var r_tel=/^1[3,5,8]\d{9}$/&lt;br /&gt;
+    //验证身份证号  18位或者17位加一个X&lt;br /&gt;
+    var r_s=/^\d{18}|\d{17}x$/i&lt;br /&gt;
+    //验证中文&lt;br /&gt;
+    var reg=/^[\u4e00-\u9fa5]{2,17}$/&lt;br /&gt;
+    //php中文&lt;br /&gt;
+    $reg = “/^[\x{4e00}-\x{9fa5}]$/u”&lt;/p&gt;
+</description>
+        <pubDate>Fri, 16 May 2014 00:00:00 +0800</pubDate>
+        <link>http://www.ltybr.com///php/2014/05/16/phptwomo.html</link>
+        <guid isPermaLink="true">http://www.ltybr.com///php/2014/05/16/phptwomo.html</guid>
+        
+        <category>epel</category>
+        
+        
+        <category>php</category>
+        
+      </item>
+    
+      <item>
+        <title>PHP总结&lt;1&gt;</title>
         <description>&lt;p&gt;PDO:&lt;/p&gt;
 
 &lt;p&gt;PDO常用方法：&lt;/p&gt;
@@ -5260,68 +6585,14 @@ mysql -uroot -p密码 &amp;lt; c:\school.sql&lt;br /&gt;
 
 &lt;p&gt;EPEL版本不同，根据不同系统请自行安装。&lt;/p&gt;
 </description>
-        <pubDate>Tue, 13 Jan 2015 00:00:00 +0800</pubDate>
-        <link>http://www.ltybr.com///php/2015/01/13/phpfirstmo.html</link>
-        <guid isPermaLink="true">http://www.ltybr.com///php/2015/01/13/phpfirstmo.html</guid>
+        <pubDate>Sat, 10 May 2014 00:00:00 +0800</pubDate>
+        <link>http://www.ltybr.com///php/2014/05/10/phpfirstmo.html</link>
+        <guid isPermaLink="true">http://www.ltybr.com///php/2014/05/10/phpfirstmo.html</guid>
         
         <category>epel</category>
         
         
         <category>php</category>
-        
-      </item>
-    
-      <item>
-        <title>RHEL的EPEL源地址及安装</title>
-        <description>&lt;p&gt;RHEL6:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[root@test ~]# rpm -ivh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-5.noarch.rpm
-[root@test ~]# rpm -ivh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;RHEL5:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[root@test ~]# rpm -ivh http://download.fedoraproject.org/pub/epel/5/i386/epel-release-5-4.noarch.rpm
-[root@test ~]# rpm -ivh  http://download.fedoraproject.org/pub/epel/5/i386/epel-release-5-4.noarch.rpm
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;EPEL版本不同，根据不同系统请自行安装。&lt;/p&gt;
-</description>
-        <pubDate>Tue, 13 Jan 2015 00:00:00 +0800</pubDate>
-        <link>http://www.ltybr.com///linux/2015/01/13/linux-epel.html</link>
-        <guid isPermaLink="true">http://www.ltybr.com///linux/2015/01/13/linux-epel.html</guid>
-        
-        <category>epel</category>
-        
-        
-        <category>Linux</category>
-        
-      </item>
-    
-      <item>
-        <title>我的第er篇博客</title>
-        <description>&lt;p&gt;喜欢写Blog的人，会经历三个阶段。&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;第一阶段，刚接触Blog，觉得很新鲜，试着选择一个免费空间来写。
-第二阶段，发现免费空间限制太多，就自己购买域名和空间，搭建独立博客。
-第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来管，自己只负责写文章。
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;转自&lt;a href=&quot;http://www.ruanyifeng.com/&quot;&gt;阮一峰&lt;/a&gt;的博文。&lt;/p&gt;
-
-&lt;p&gt;从第一份运维工作开始，就开始写笔记，有用过印象笔记，有道云笔记，gist，后来也开始写博客，那时候是在CSDN上面注册了一个账号，写了有几个月见见的也荒废了；再后来，想自己搞个云主机，在&lt;a href=&quot;http://aliyun.com&quot;&gt;阿里云&lt;/a&gt;上租了一台主机，一个月￥60，先是用wordpress，感觉可定制功能不强，因为是PHP写的，个人主要学习Python，所以感觉自己用Django写了一个博客，在15年双十一，云主机降价，花了一半的价钱（￥200）在美团云上买了一台1C、1G、1MB带宽的主机，至此也了解了阿里云和美团云的一些不同之处，美团云主打的是纯净的系统，而阿里云应用市场比较丰富。现在准备把自己的博客迁移到&lt;a href=&quot;http://github.com&quot;&gt;github&lt;/a&gt;上，在学习了markdown入门和jekyll基础后，目前博客已经初步成立，同时完善了我的一些文章，希望今后能够勤写文章。&lt;/p&gt;
-</description>
-        <pubDate>Thu, 08 Jan 2015 00:00:00 +0800</pubDate>
-        <link>http://www.ltybr.com///life/2015/01/08/first-blog-2.html</link>
-        <guid isPermaLink="true">http://www.ltybr.com///life/2015/01/08/first-blog-2.html</guid>
-        
-        <category>blog</category>
-        
-        
-        <category>Life</category>
         
       </item>
     

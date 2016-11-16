@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+
+	
+	    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <meta content="微信支付,公众号支付流程及sdk包" name="description">
+  
+  
+    <meta name="keywords" content="微信,支付,公众号">
+  
+  <meta name="author" content="Li">
+
+  <title>
+    
+        LTY|微信支付【公众号支付】
+    
+  </title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="/static/img/1616.ico">
+
+  <!-- Third-party CSS -->
+  <link href="/bower_components/normalize-css/normalize.min.css" rel="stylesheet">
+  <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/bower_components/animate.css/animate.min.css" rel="stylesheet">
+  <link href="/bower_components/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/static/font-mfizz/font-mfizz.css" rel="stylesheet">
+  <!-- <link href="/bower_components/toastr/toastr.min.css" rel="stylesheet"> -->
+  <link href="/bower_components/jquery.gritter/css/jquery.gritter.css" rel="stylesheet">
+  <link rel="stylesheet" href="/search/css/cb-search.css">
+
+  <!-- Custom styles for this template -->
+  <link href="/static/css/style.min.css" rel="stylesheet">
+  <link href="/static/css/pygments.css" rel="stylesheet">
+
+  <!-- Scripts -->
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/search/js/bootstrap3-typeahead.min.js"></script>
+
+  <!-- cb-search -->
+  <script src="/search/js/cb-search.js"></script>
+  <script>
+    $(function(){
+        $("pre").css('display','block');
+    });
+  </script>
+  <!-- Mainly scripts -->
+  <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/bower_components/metisMenu/dist/metisMenu.min.js"></script>
+  <script src="/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+
+  <!-- Peity -->
+  <script src="/bower_components/peity/jquery.peity.min.js"></script>
+
+  <script src="/bower_components/PACE/pace.min.js"></script>
+  <script src="/bower_components/wow/dist/wow.min.js"></script>
+  <!-- Custom and plugin javascript -->
+  <script src="/static/js/inspinia.js"></script>
+
+  <!-- Rickshaw -->
+  <script src="/bower_components/rickshaw/vendor/d3.v3.js"></script>
+  <script src="/bower_components/rickshaw/rickshaw.min.js"></script>
+
+
+  <!-- jPages -->
+  <script src="/static/js/jPages.js"></script>
+  <script src="/static/js/js.js"></script>
+  <script id="dsq-count-scr" src="//jalpc.disqus.com/count.js" async></script>
+  <script type="text/javascript">
+        $(function(){
+          /* initiate the plugin */
+          $("div.pag-holder").jPages({
+              containerID  : "pag-itemContainer",
+              perPage      : 5,  /* num of items per page */
+              startPage    : 1,
+              startRange   : 1,
+              midRange     : 3,
+              endRange     : 1
+          });
+      });
+  </script>
+
+<!-- GrowingIO -->
+
+  <script>
+    var _vds = _vds || [];
+    window._vds = _vds;
+    (function(){
+      _vds.push(['setAccountId', 'a49d4901c7853da9']);
+      (function() {
+        var vds = document.createElement('script');
+        vds.type='text/javascript';
+        vds.async = true;
+        vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(vds, s);
+      })();
+    })();
+  </script>
+
+
+</head>
+
+	
+
+
+<body id="page-top" class="landing-page">
+
+	
+	    <div class="search-tool"
+      style="position: fixed; top: 0px ; bottom: 0px; left: 0px; right:  0px; opacity: 0.95; background-color: #111111; z-index: 9999; display: none;">
+    <input type="text" class="form-control search-content" id="search-content" style="position: fixed; top: 60px" placeholder="Search Blog">
+
+    <div style="position: fixed; top: 16px; right: 16px; z-index: 9999;">
+        <img src="/search/img/cb-close.png" id="close-btn"/>
+    </div>
+</div>
+
+<div style="position: fixed; right: 16px; bottom: 20px; z-index: 9999;">
+    <img src="/search/img/cb-search.png"  id="search-btn"  title="Double click Ctrl"/>
+</div>
+
+<div class="navbar-wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">LTY</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="page-scroll" href="/blog/"></a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/blog/">Blog</a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/python/">Python</a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/wechat/">Wechat</a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/php/">PHP</a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/linux/">Linux</a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/html/">HTML</a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/database/">Database</a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/framework/">Framework</a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/mac/">Mac</a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/life/">Life</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+</div>
+<div id="inSlider" class="carousel carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#inSlider" data-slide-to="0" class="active"></li>
+        <li data-target="#inSlider" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <div class="container">
+                <div class="carousel-caption">
+                </div>
+                <div class="carousel-image wow zoomIn">
+                    <!-- <img src="static/img/landing/laptop.png" alt="laptop"/> -->
+                </div>
+            </div>
+            <!-- Set background for slide in css -->
+            <div class="header-back one"></div>
+
+        </div>
+        <div class="item">
+            <div class="container">
+                <div class="carousel-caption blank">
+                </div>
+            </div>
+            <!-- Set background for slide in css -->
+            <div class="header-back two"></div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#inSlider" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#inSlider" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+	
+
+    <div class="wrapper wrapper-content  animated fadeInRight article">
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="ibox">
+                <div class="ibox-content">
+                    <div class="pull-right">
+                    	
+                        	<button class="btn btn-white btn-xs" type="button">wechat</button>
+                        
+                    </div>
+                    <div class="text-center article-title">
+                    <span class="text-muted"><i class="fa fa-clock-o"></i> 13 Jan 2015</span>
+                        <h1>
+                            微信支付【公众号支付】
+                        </h1>
+                    </div>
+                    	<h4 id="api">网页端调起支付API</h4>
+
+<p>在微信浏览器里面打开H5网页中执行JS调起支付。接口输入输出数据格式为JSON，列表中参数名区分大小，大小写错误签名验证会失败。<br />
+具体的参数如下</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>名称 	               变量名 	         必填 	           类型 	             示例值 	                        描述
+公众号id 	           appId 	           是 	        String(16) 	    wx8888888888888888 	            商户注册具有支付权限的公众号成功后即可获得
+时间戳 	               timeStamp 	       是 	        String(32) 	    1414561699 	                    当前的时间，其他详见时间戳规则
+随机字符串 	           nonceStr 	       是 	        String(32)    	5K8264ILTKCH16CQ2502SI8ZNMTM67VS 	随机字符串，不长于32位。推荐随机数生成算法
+订单详情扩展字符串 	   package 	           是 	        String(128) 	prepay_id=123456789 	          统一下单接口返回的prepay_id参数值，提交格式如：prepay_id=***
+签名方式 	           signType 	       是 	        String(32) 	    MD5 	                             签名算法，暂支持MD5
+签名 	               paySign             是 	        String(64)     	C380BEC2BFD727A4B6845133519F3AD6 	签名，详见签名生成算法
+</code></pre>
+</div>
+
+<p>返回值</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>返回值 	                           描述
+get_brand_wcpay_request：ok 	支付成功
+get_brand_wcpay_request：cancel 	支付过程中用户取消
+get_brand_wcpay_request：fail 	支付失败
+</code></pre>
+</div>
+
+<p>注：JS API的返回结果get_brand_wcpay_request：ok仅在用户成功完成支付时返回。由于前端交互复杂，get_brand_wcpay_request：cancel或者get_brand_wcpay_request：fail可以统一处理为用户遇到错误或者主动放弃，不必细化区分。</p>
+
+<p>示例代码如下：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>function onBridgeReady(){
+   WeixinJSBridge.invoke(
+       'getBrandWCPayRequest', {
+           "appId" ： "wx2421b1c4370ec43b",     //公众号名称，由商户传入
+           "timeStamp"：" 1395712654",         //时间戳，自1970年以来的秒数
+           "nonceStr" ： "e61463f8efa94090b1f366cccfbbb444", //随机串
+           "package" ： "prepay_id=u802345jgfjsdfgsdg888",
+           "signType" ： "MD5",         //微信签名方式：
+           "paySign" ： "70EA570631E4BB79628FBCA90534C63FF7FADD89" //微信签名
+       },
+       function(res){
+           if(res.err_msg == "get_brand_wcpay_request：ok" ) {}     // 使用以上方式判断前端返回,微信团队郑重提示：res.err_msg将在用户支付成功后返回    ok，但并不保证它绝对可靠。
+       }
+   );
+}
+if (typeof WeixinJSBridge == "undefined"){
+   if( document.addEventListener ){
+       document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+   }else if (document.attachEvent){
+       document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+       document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+   }
+}else{
+   onBridgeReady();
+}
+</code></pre>
+</div>
+
+<p>API示例</p>
+
+<p>统一下单：</p>
+
+<p>接口链接 URL地址：https://api.mch.weixin.qq.com/pay/unifiedorder<br />
+需要证书<br />
+必填的参数有</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>公众账号ID 	appid  	String(32)      微信分配的公众账号ID（企业号corpid即为此appId）
+商户号 	mch_id      	String(32)     微信支付分配的商户号
+随机字符串 	nonce_str     	String(32)       随机字符串，不长于32位。推荐随机数生成算法
+签名 	sign      String(32)      签名，详见签名生成算法
+商品描述 	body    String(128)     商品简单描述，该字段须严格按照规范传递，具体请见参数规定
+商户订单号    	out_trade_no      	String(32)    商户系统内部的订单号,32个字符内、可包含字母, 其他说明见商户订单号
+总金额 	total_fee 	Int   	订单总金额，单位为分，详见支付金额
+终端IP 	spbill_create_ip      String(16)      APP和网页支付提交用户端ip，Native支付填调用微信支付API的机器IP。
+通知地址 	notify_url          String(256)     接收微信支付异步通知回调地址，通知url必须为直接可访问的url，不能携带参数。
+交易类型 	trade_type       	String(16)       	取值如下：JSAPI，NATIVE，APP，详细说明见参数规定
+</code></pre>
+</div>
+
+<p>返回结果</p>
+
+<p>返回状态码<br />
+ <code class="highlighter-rouge">
+ return_code        String(16)       SUCCESS     SUCCESS/FAIL 此字段是通信标识，非交易标识，交易是否成功需要查看result_code来判断
+</code></p>
+
+<p>以下字段在return_code为SUCCESS的时候有返回</p>
+
+<p>公众账号ID      appid       String(32)      调用接口提交的公众账号ID<br />
+商户号     	mch_id 	   String(32)       调用接口提交的商户号<br />
+随机字符串 	     nonce_str       String(32)      微信返回的随机字符串<br />
+签名 	sign      String(32)      微信返回的签名，详见签名算法<br />
+业务结果 	result_code      	String(16)       	SUCCESS/FAIL</p>
+
+<p>申请退款:<br />
+接口地址 接口链接：https://api.mch.weixin.qq.com/secapi/pay/refund<br />
+请求需要双向证书。 详见证书使用</p>
+
+<p>必选参数</p>
+
+<p>公众账号ID 	appid      String(32)       微信分配的公众账号ID（企业号corpid即为此appId）<br />
+商户号 	mch_id     String(32)           	微信支付分配的商户号<br />
+随机字符串 	nonce_str     	String(32)       随机字符串，不长于32位。推荐随机数生成算法<br />
+签名 	sign      String(32)          签名，详见签名生成算法<br />
+微信订单号 	transaction_id       String(28)      微信生成的订单号，在支付通知中有返回   ：<br />
+                                                                                        ：//二选一<br />
+商户订单号 	out_trade_no         String(32)      233368018 	商户侧传给微信的订单号      ：<br />
+商户退款单号 	out_refund_no     String(32)      商户系统内部的退款单号，商户系统内部唯一，同一退款单号多次请求只退一笔<br />
+订单金额 	total_fee        	Int      	订单总金额，单位为分，只能为整数，详见支付金额<br />
+退款金额 	refund_fee       	Int         退款总金额，订单总金额，单位为分，只能为整数，详见支付金额<br />
+操作员 	op_user_id         String(32)      操作员帐号, 默认为商户号</p>
+
+<p>返回结果<br />
+返回状态码 	return_code 	是 	String(16) 	SUCCESS 	SUCCESS/FAIL</p>
+
+<p>不过我们现在可以使用SDK包，微信给我们提供了三种SDK包<br />
+JAVA 	【微信支付】API对应的SDK和调用示例 	刷卡支付     <a href="https://pay.weixin.qq.com/wiki/doc/api/download/wxpay_scanpay_java_sdk_proj-master.zip">下载</a><br />
+.NET C# 【微信支付】API对应的SDK和调用示例 	刷卡支付、微信内网页支付、扫码支付     <a href="https://pay.weixin.qq.com/wiki/doc/api/download/WxPayAPI_CS_v3.zip">下载</a><br />
+PHP 	【微信支付】API对应的SDK和调用示例 	刷卡支付、微信内网页支付、扫码支付     <a href="https://pay.weixin.qq.com/wiki/doc/api/download/WxpayAPI_php_v3.zip">下载</a></p>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                                <h5 style="display: inline;">Tags:</h5>
+                                
+                                    <button class="btn btn-white btn-xs" type="button">weipay</button>
+                                
+                        </div>
+                        <div class="col-md-6">
+                            <div class="small text-right">
+                                <h5>Stats:</h5>
+                                <div> 
+                                
+                                
+                                <i class="fa fa-comments-o"> </i> <span class='disqus-comment-count' data-disqus-url="http://www.ltybr.com//wechat/2015/01/13/weipay.html">0</span> comments
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- donate -->
+                            
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+    Donate
+</button>
+<div class="modal inmodal" id="myModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content animated flipInY">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">Donate Me</h4>
+                <small class="font-bold">Thanks for your support!</small>
+            </div>
+            <div class="modal-body">
+                <div class="tabbable" id="tabs-960227">
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#panel-405278" data-toggle="tab">Alipay</a>
+                        </li>
+                        <li>
+                            <a href="#panel-874705" data-toggle="tab">Wechat</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="panel-405278">
+                            <div class="text-center">
+                                <img src="/static/img/pay/alipay.png"" height="250" width="250">
+                            </div>    
+                        </div>
+                        <div class="tab-pane" id="panel-874705">
+                            <div class="text-center">
+                                <img src="/static/img/pay/wechat.png"" height="250" width="250">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+                            
+                            <br>
+                            <!-- share -->
+                            
+                                <h2>Share:</h2>
+
+<div class="bshare-custom">
+	<a title="分享到微信" class="bshare-weixin"></a>
+	<a title="分享到QQ空间" class="bshare-qzone"></a>
+	<a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+	<a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a>
+</div>
+<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=513f778e-a8f7-4c20-9ec2-d29cc2328d75&amp;pophcol=1&amp;lang=zh"></script>
+<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+                            
+                            <br>
+                            <!-- comment -->
+                            
+
+
+<div id="disqus_thread"></div>
+<script>
+/** * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS. * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */
+	/*
+	var disqus_config = function () { this.page.url = PAGE_URL;
+	// Replace PAGE_URL with your page's canonical URL variable this.page.identifier = PAGE_IDENTIFIER;
+	// Replace PAGE_IDENTIFIER with your page's unique identifier variable };
+	*/
+	(function() { // DON'T EDIT BELOW THIS LINE
+			var d = document, s = d.createElement('script');
+			s.src = '//jalpc.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+		})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+	
+	    <script src="/static/js/scroll.js"></script>
+
+<!-- Baidu analytics -->
+
+
+<!-- Google analytics -->
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-73784599-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+
+
+  <script type="text/javascript">
+    var disqusShortName = "jalpc";
+
+    var disqusPublicKey = "tj2MPaNlHMONwTH5bGDNSXyaBpW7q282MeUzh5CwcjJerNhK8Kxk3aWo7IckzTX7";
+
+    var urlArray = [];
+    $('.disqus-comment-count').each(function () {
+      var url = $(this).attr('data-disqus-url');
+      urlArray.push('link:' + url);
+    });
+    $.ajax({
+      type: 'GET',
+      url: "https://disqus.com/api/3.0/threads/set.jsonp",
+      data: { api_key: disqusPublicKey, forum : disqusShortName, thread : urlArray },
+      cache: false,
+      dataType: "jsonp",
+      success: function (result) {
+        for (var i in result.response) {
+          var count = result.response[i].posts;
+          if ( count ) {
+            $('.disqus-comment-count[data-disqus-url="' + result.response[i].link + '"]').html(count);
+          }
+        }
+      }
+    });
+</script>
+
+
+
+
+<script async src="/static/js/count_page.js"></script>
+
+	
+
+</body>
+</html>

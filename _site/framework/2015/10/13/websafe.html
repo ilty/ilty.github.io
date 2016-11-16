@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+
+	
+	    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <meta content="常见的网站攻击方式" name="description">
+  
+  
+    <meta name="keywords" content="架构,安全,web安全,网站攻击">
+  
+  <meta name="author" content="Li">
+
+  <title>
+    
+        LTY|归结web网站攻击与防范  
+    
+  </title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="/static/img/1616.ico">
+
+  <!-- Third-party CSS -->
+  <link href="/bower_components/normalize-css/normalize.min.css" rel="stylesheet">
+  <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/bower_components/animate.css/animate.min.css" rel="stylesheet">
+  <link href="/bower_components/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/static/font-mfizz/font-mfizz.css" rel="stylesheet">
+  <!-- <link href="/bower_components/toastr/toastr.min.css" rel="stylesheet"> -->
+  <link href="/bower_components/jquery.gritter/css/jquery.gritter.css" rel="stylesheet">
+  <link rel="stylesheet" href="/search/css/cb-search.css">
+
+  <!-- Custom styles for this template -->
+  <link href="/static/css/style.min.css" rel="stylesheet">
+  <link href="/static/css/pygments.css" rel="stylesheet">
+
+  <!-- Scripts -->
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/search/js/bootstrap3-typeahead.min.js"></script>
+
+  <!-- cb-search -->
+  <script src="/search/js/cb-search.js"></script>
+  <script>
+    $(function(){
+        $("pre").css('display','block');
+    });
+  </script>
+  <!-- Mainly scripts -->
+  <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/bower_components/metisMenu/dist/metisMenu.min.js"></script>
+  <script src="/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+
+  <!-- Peity -->
+  <script src="/bower_components/peity/jquery.peity.min.js"></script>
+
+  <script src="/bower_components/PACE/pace.min.js"></script>
+  <script src="/bower_components/wow/dist/wow.min.js"></script>
+  <!-- Custom and plugin javascript -->
+  <script src="/static/js/inspinia.js"></script>
+
+  <!-- Rickshaw -->
+  <script src="/bower_components/rickshaw/vendor/d3.v3.js"></script>
+  <script src="/bower_components/rickshaw/rickshaw.min.js"></script>
+
+
+  <!-- jPages -->
+  <script src="/static/js/jPages.js"></script>
+  <script src="/static/js/js.js"></script>
+  <script id="dsq-count-scr" src="//jalpc.disqus.com/count.js" async></script>
+  <script type="text/javascript">
+        $(function(){
+          /* initiate the plugin */
+          $("div.pag-holder").jPages({
+              containerID  : "pag-itemContainer",
+              perPage      : 5,  /* num of items per page */
+              startPage    : 1,
+              startRange   : 1,
+              midRange     : 3,
+              endRange     : 1
+          });
+      });
+  </script>
+
+<!-- GrowingIO -->
+
+  <script>
+    var _vds = _vds || [];
+    window._vds = _vds;
+    (function(){
+      _vds.push(['setAccountId', 'a49d4901c7853da9']);
+      (function() {
+        var vds = document.createElement('script');
+        vds.type='text/javascript';
+        vds.async = true;
+        vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(vds, s);
+      })();
+    })();
+  </script>
+
+
+</head>
+
+	
+
+
+<body id="page-top" class="landing-page">
+
+	
+	    <div class="search-tool"
+      style="position: fixed; top: 0px ; bottom: 0px; left: 0px; right:  0px; opacity: 0.95; background-color: #111111; z-index: 9999; display: none;">
+    <input type="text" class="form-control search-content" id="search-content" style="position: fixed; top: 60px" placeholder="Search Blog">
+
+    <div style="position: fixed; top: 16px; right: 16px; z-index: 9999;">
+        <img src="/search/img/cb-close.png" id="close-btn"/>
+    </div>
+</div>
+
+<div style="position: fixed; right: 16px; bottom: 20px; z-index: 9999;">
+    <img src="/search/img/cb-search.png"  id="search-btn"  title="Double click Ctrl"/>
+</div>
+
+<div class="navbar-wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">LTY</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="page-scroll" href="/blog/"></a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/blog/">Blog</a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/python/">Python</a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/wechat/">Wechat</a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/php/">PHP</a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/linux/">Linux</a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/html/">HTML</a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/database/">Database</a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/framework/">Framework</a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/mac/">Mac</a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/life/">Life</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+</div>
+<div id="inSlider" class="carousel carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#inSlider" data-slide-to="0" class="active"></li>
+        <li data-target="#inSlider" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <div class="container">
+                <div class="carousel-caption">
+                </div>
+                <div class="carousel-image wow zoomIn">
+                    <!-- <img src="static/img/landing/laptop.png" alt="laptop"/> -->
+                </div>
+            </div>
+            <!-- Set background for slide in css -->
+            <div class="header-back one"></div>
+
+        </div>
+        <div class="item">
+            <div class="container">
+                <div class="carousel-caption blank">
+                </div>
+            </div>
+            <!-- Set background for slide in css -->
+            <div class="header-back two"></div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#inSlider" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#inSlider" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+	
+
+    <div class="wrapper wrapper-content  animated fadeInRight article">
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="ibox">
+                <div class="ibox-content">
+                    <div class="pull-right">
+                    	
+                        	<button class="btn btn-white btn-xs" type="button">Framework</button>
+                        
+                    </div>
+                    <div class="text-center article-title">
+                    <span class="text-muted"><i class="fa fa-clock-o"></i> 13 Oct 2015</span>
+                        <h1>
+                            归结web网站攻击与防范  
+                        </h1>
+                    </div>
+                    	<p>一般现在常见的网站攻击方式：<br />
+sql注入，xss攻击，csrf攻击，文件上传漏洞，访问控制。这些是一般网站容易发生的攻击方式，接下来我们一一分析它们是如何攻击以及防范的。</p>
+
+<h2 id="sql">sql注入</h2>
+
+<h3 id="sql-1">什么是sql注入？</h3>
+
+<p>sql注入说的通俗一些就是用户在http请求中注入而已的代码，导致服务器使用数据库sql命令时，导致恶意sql一起被执行。<br />
+用户登录，输入用户名 zhangsan，密码 ‘ or ‘1’=’1 ，如果此时使用参数构造的方式，就会出现</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>    select * from user
+   where name = 'zhangsan'    and password = '' or '1'='1'
+</code></pre>
+</div>
+
+<p>这样zhangsan用户没有密码也可以被登陆，如果用户注入的是操作表的sql，就有大麻烦了。</p>
+
+<h3 id="sql-2">怎么防范sql注入？</h3>
+
+<p>     1.不用拼接 SQL 字符串<br />
+     2. 有效性检验。(前端后端都需要。第一准则，外部都是不可信的，防止攻击者绕过Web端请求)<br />
+     3过滤 SQL 需要的参数中的特殊字符。比如单引号、双引号。推荐几个函数mysql_real_escape_string()  addslashes()htmlentities() htmlspecialchars() strip_tags()  intval()<br />
+     4.限制字符串输入的长度。</p>
+
+<h2 id="xss">xss攻击</h2>
+
+<h3 id="xss-1">什么是xss攻击</h3>
+
+<p>跨站点脚本攻击，指攻击者通过篡改网页，嵌入恶意脚本程序，在用户浏览网页时，控制用户浏览器进行恶意操作的一种攻击方式。<br />
+假设页面上有一个表单：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>    &lt;input  type="text" name="name" value="lisi"/&gt;
+</code></pre>
+</div>
+
+<p>如果，用户输入的不是一个正常的字符串，而是</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>    "/&gt;&lt;script&gt;alert("haha")&lt;/script&gt;&lt;!-
+</code></pre>
+</div>
+
+<p>此时，页面变成下面的内容，在输入框input的后面带上了一段脚本代码。</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>    &lt;input  type="text" name="name" value="梁桂钊"/&gt;&lt;script&gt;alert("haha")&lt;/script&gt;&lt;!-"/&gt;
+</code></pre>
+</div>
+
+<p>这端脚本程序只是弹出一个消息框，并不会造成什么危害，攻击的威力取决于用户输入了什么样的脚本，只要稍微修改，便可使攻击极具攻击性。常见的就是用户一般在评论中或者反馈中使用xss。</p>
+
+<h3 id="xss-2">如何防范xss</h3>
+
+<p>同sql注入一样。可以限制输入字符串的长度，对HTML转义处理。将其中的”&lt;”,”&gt;”等特殊字符进行转义编码。</p>
+
+<h2 id="csrf">csrf攻击</h2>
+
+<h3 id="csrf-1">什么是csrf攻击</h3>
+
+<p>跨站点请求伪造，指攻击者通过跨站请求，以合法的用户的身份进行非法操作。可以这么理解CSRF攻击：攻击者盗用你的身份，以你的名义向第三方网站发送恶意请求。CRSF能做的事情包括利用你的身份发邮件，发短信，进行交易转账，甚至盗取账号信息。跨站点请求伪造，指攻击者通过跨站请求，以合法的用户的身份进行非法操作。可以这么理解CSRF攻击：攻击者盗用你的身份，以你的名义向第三方网站发送恶意请求。CRSF能做的事情包括利用你的身份发邮件，发短信，进行交易转账，甚至盗取账号信息。</p>
+
+<h3 id="csrf-2">怎么防止csrf</h3>
+
+<ol>
+  <li>
+    <p>安全框架使用。比如yii lavarel等。</p>
+  </li>
+  <li>
+    <p>token机制。在HTTP请求中进行token验证，如果请求中没有token或者token内容不正确，则认为CSRF攻击而拒绝该请求。</p>
+  </li>
+  <li>
+    <p>验证码。通常情况下，验证码能够很好的遏制CSRF攻击，但是很多情况下，出于用户体验考虑，验证码只能作为一种辅助手段，而不是最主要的解决方案。</p>
+  </li>
+  <li>
+    <p>referer识别。在HTTP Header中有一个字段Referer，它记录了HTTP请求的来源地址。如果Referer是其他网站，就有可能是CSRF攻击，则拒绝该请求。但是，服务器并非都能取到Referer。很多用户出于隐私保护的考虑，限制了Referer的发送。在某些情况下，浏览器也不会发送Referer，例如HTTPS跳转到HTTP。</p>
+  </li>
+</ol>
+
+<h2 id="section">文件上传漏洞</h2>
+
+<h3 id="section-1">什么是文件上传漏洞</h3>
+
+<p>文件上传漏洞，指的是用户上传一个可执行的脚本文件，并通过此脚本文件获得了执行服务端命令的能力。比如用户上传一个可以关机的执行文件，你的损失就大发了。</p>
+
+<h3 id="section-2">如何防范</h3>
+
+<ol>
+  <li>
+    <p>文件上传的目录设置为不可执行。</p>
+  </li>
+  <li>
+    <p>判断文件类型。在判断文件类型的时候，可以结合使用MIME Type，后缀检查等方式。因为对于上传文件，不能简单地通过后缀名称来判断文件的类型，因为攻击者可以将可执行文件的后缀名称改为图片或其他后缀类型，诱导用户执行。</p>
+  </li>
+  <li>
+    <p>对上传的文件类型进行白名单校验，只允许上传可靠类型。</p>
+  </li>
+  <li>
+    <p>上传的文件需要进行重新命名，使攻击者无法猜想上传文件的访问路径，将极大地增加攻击成本，同时向shell.PHP.rar.ara这种文件，因为重命名而无法成功实施攻击。</p>
+  </li>
+  <li>
+    <p>限制上传文件的大小。</p>
+  </li>
+  <li>
+    <p>单独设置文件服务器的域名。</p>
+  </li>
+</ol>
+
+<h2 id="section-3">访问控制</h2>
+
+<p>即RBAC。现在一般网站都已经不存在这种问题了。</p>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                                <h5 style="display: inline;">Tags:</h5>
+                                
+                                    <button class="btn btn-white btn-xs" type="button">小记</button>
+                                
+                        </div>
+                        <div class="col-md-6">
+                            <div class="small text-right">
+                                <h5>Stats:</h5>
+                                <div> 
+                                
+                                
+                                <i class="fa fa-comments-o"> </i> <span class='disqus-comment-count' data-disqus-url="http://www.ltybr.com//framework/2015/10/13/websafe.html">0</span> comments
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- donate -->
+                            
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+    Donate
+</button>
+<div class="modal inmodal" id="myModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content animated flipInY">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">Donate Me</h4>
+                <small class="font-bold">Thanks for your support!</small>
+            </div>
+            <div class="modal-body">
+                <div class="tabbable" id="tabs-960227">
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#panel-405278" data-toggle="tab">Alipay</a>
+                        </li>
+                        <li>
+                            <a href="#panel-874705" data-toggle="tab">Wechat</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="panel-405278">
+                            <div class="text-center">
+                                <img src="/static/img/pay/alipay.png"" height="250" width="250">
+                            </div>    
+                        </div>
+                        <div class="tab-pane" id="panel-874705">
+                            <div class="text-center">
+                                <img src="/static/img/pay/wechat.png"" height="250" width="250">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+                            
+                            <br>
+                            <!-- share -->
+                            
+                                <h2>Share:</h2>
+
+<div class="bshare-custom">
+	<a title="分享到微信" class="bshare-weixin"></a>
+	<a title="分享到QQ空间" class="bshare-qzone"></a>
+	<a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+	<a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a>
+</div>
+<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=513f778e-a8f7-4c20-9ec2-d29cc2328d75&amp;pophcol=1&amp;lang=zh"></script>
+<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+                            
+                            <br>
+                            <!-- comment -->
+                            
+
+
+<div id="disqus_thread"></div>
+<script>
+/** * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS. * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */
+	/*
+	var disqus_config = function () { this.page.url = PAGE_URL;
+	// Replace PAGE_URL with your page's canonical URL variable this.page.identifier = PAGE_IDENTIFIER;
+	// Replace PAGE_IDENTIFIER with your page's unique identifier variable };
+	*/
+	(function() { // DON'T EDIT BELOW THIS LINE
+			var d = document, s = d.createElement('script');
+			s.src = '//jalpc.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+		})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+	
+	    <script src="/static/js/scroll.js"></script>
+
+<!-- Baidu analytics -->
+
+
+<!-- Google analytics -->
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-73784599-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+
+
+  <script type="text/javascript">
+    var disqusShortName = "jalpc";
+
+    var disqusPublicKey = "tj2MPaNlHMONwTH5bGDNSXyaBpW7q282MeUzh5CwcjJerNhK8Kxk3aWo7IckzTX7";
+
+    var urlArray = [];
+    $('.disqus-comment-count').each(function () {
+      var url = $(this).attr('data-disqus-url');
+      urlArray.push('link:' + url);
+    });
+    $.ajax({
+      type: 'GET',
+      url: "https://disqus.com/api/3.0/threads/set.jsonp",
+      data: { api_key: disqusPublicKey, forum : disqusShortName, thread : urlArray },
+      cache: false,
+      dataType: "jsonp",
+      success: function (result) {
+        for (var i in result.response) {
+          var count = result.response[i].posts;
+          if ( count ) {
+            $('.disqus-comment-count[data-disqus-url="' + result.response[i].link + '"]').html(count);
+          }
+        }
+      }
+    });
+</script>
+
+
+
+
+<script async src="/static/js/count_page.js"></script>
+
+	
+
+</body>
+</html>

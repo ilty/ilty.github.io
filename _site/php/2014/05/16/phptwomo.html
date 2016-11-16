@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+
+	
+	    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <meta content="我的php" name="description">
+  
+  
+    <meta name="keywords" content="javascript,js,session,cookie">
+  
+  <meta name="author" content="Li">
+
+  <title>
+    
+        LTY|PHP学习<2>
+    
+  </title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="/static/img/1616.ico">
+
+  <!-- Third-party CSS -->
+  <link href="/bower_components/normalize-css/normalize.min.css" rel="stylesheet">
+  <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/bower_components/animate.css/animate.min.css" rel="stylesheet">
+  <link href="/bower_components/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/static/font-mfizz/font-mfizz.css" rel="stylesheet">
+  <!-- <link href="/bower_components/toastr/toastr.min.css" rel="stylesheet"> -->
+  <link href="/bower_components/jquery.gritter/css/jquery.gritter.css" rel="stylesheet">
+  <link rel="stylesheet" href="/search/css/cb-search.css">
+
+  <!-- Custom styles for this template -->
+  <link href="/static/css/style.min.css" rel="stylesheet">
+  <link href="/static/css/pygments.css" rel="stylesheet">
+
+  <!-- Scripts -->
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/search/js/bootstrap3-typeahead.min.js"></script>
+
+  <!-- cb-search -->
+  <script src="/search/js/cb-search.js"></script>
+  <script>
+    $(function(){
+        $("pre").css('display','block');
+    });
+  </script>
+  <!-- Mainly scripts -->
+  <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/bower_components/metisMenu/dist/metisMenu.min.js"></script>
+  <script src="/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+
+  <!-- Peity -->
+  <script src="/bower_components/peity/jquery.peity.min.js"></script>
+
+  <script src="/bower_components/PACE/pace.min.js"></script>
+  <script src="/bower_components/wow/dist/wow.min.js"></script>
+  <!-- Custom and plugin javascript -->
+  <script src="/static/js/inspinia.js"></script>
+
+  <!-- Rickshaw -->
+  <script src="/bower_components/rickshaw/vendor/d3.v3.js"></script>
+  <script src="/bower_components/rickshaw/rickshaw.min.js"></script>
+
+
+  <!-- jPages -->
+  <script src="/static/js/jPages.js"></script>
+  <script src="/static/js/js.js"></script>
+  <script id="dsq-count-scr" src="//jalpc.disqus.com/count.js" async></script>
+  <script type="text/javascript">
+        $(function(){
+          /* initiate the plugin */
+          $("div.pag-holder").jPages({
+              containerID  : "pag-itemContainer",
+              perPage      : 5,  /* num of items per page */
+              startPage    : 1,
+              startRange   : 1,
+              midRange     : 3,
+              endRange     : 1
+          });
+      });
+  </script>
+
+<!-- GrowingIO -->
+
+  <script>
+    var _vds = _vds || [];
+    window._vds = _vds;
+    (function(){
+      _vds.push(['setAccountId', 'a49d4901c7853da9']);
+      (function() {
+        var vds = document.createElement('script');
+        vds.type='text/javascript';
+        vds.async = true;
+        vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(vds, s);
+      })();
+    })();
+  </script>
+
+
+</head>
+
+	
+
+
+<body id="page-top" class="landing-page">
+
+	
+	    <div class="search-tool"
+      style="position: fixed; top: 0px ; bottom: 0px; left: 0px; right:  0px; opacity: 0.95; background-color: #111111; z-index: 9999; display: none;">
+    <input type="text" class="form-control search-content" id="search-content" style="position: fixed; top: 60px" placeholder="Search Blog">
+
+    <div style="position: fixed; top: 16px; right: 16px; z-index: 9999;">
+        <img src="/search/img/cb-close.png" id="close-btn"/>
+    </div>
+</div>
+
+<div style="position: fixed; right: 16px; bottom: 20px; z-index: 9999;">
+    <img src="/search/img/cb-search.png"  id="search-btn"  title="Double click Ctrl"/>
+</div>
+
+<div class="navbar-wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">LTY</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="page-scroll" href="/blog/"></a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/blog/">Blog</a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/python/">Python</a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/wechat/">Wechat</a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/php/">PHP</a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/linux/">Linux</a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/html/">HTML</a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/database/">Database</a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/framework/">Framework</a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/mac/">Mac</a></li>
+                        
+                            
+                            <li>
+                            
+                            <a class="page-scroll" href="/life/">Life</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+</div>
+<div id="inSlider" class="carousel carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#inSlider" data-slide-to="0" class="active"></li>
+        <li data-target="#inSlider" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <div class="container">
+                <div class="carousel-caption">
+                </div>
+                <div class="carousel-image wow zoomIn">
+                    <!-- <img src="static/img/landing/laptop.png" alt="laptop"/> -->
+                </div>
+            </div>
+            <!-- Set background for slide in css -->
+            <div class="header-back one"></div>
+
+        </div>
+        <div class="item">
+            <div class="container">
+                <div class="carousel-caption blank">
+                </div>
+            </div>
+            <!-- Set background for slide in css -->
+            <div class="header-back two"></div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#inSlider" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#inSlider" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+	
+
+    <div class="wrapper wrapper-content  animated fadeInRight article">
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="ibox">
+                <div class="ibox-content">
+                    <div class="pull-right">
+                    	
+                        	<button class="btn btn-white btn-xs" type="button">php</button>
+                        
+                    </div>
+                    <div class="text-center article-title">
+                    <span class="text-muted"><i class="fa fa-clock-o"></i> 16 May 2014</span>
+                        <h1>
+                            PHP学习<2>
+                        </h1>
+                    </div>
+                    	<p>javascript在HTML中的使用</p>
+
+<p>使用方式：<br />
+直接在html页面里面写：</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;script&gt;
+//js代码
+&lt;/script&gt;
+</code></pre>
+</div>
+<p>引入js脚本：<br />
+&lt;script src=’a.js’&gt;&lt;/script&gt;将a.js脚本引入到这个html页面里来</p>
+
+<p>执行顺序：js代码自上而下执行，和php代码执行顺序一致<br />
+  区分大小写：js中的代码严格区分大小写<br />
+  结束符：每行结尾的分号可有可无</p>
+
+<p>javascript的数据类型<br />
+  1．数值型：例如 3  5  1.2  3.4<br />
+  2． 布尔：两个值真或假，如true或false<br />
+  3． 字符串：例如: ‘I am a jelly doughnut’由一个或多个字符组成,<br />
+   用单引号或双引号引起来的一系列的字符(也可以称之为一个字符串对象）<br />
+  4． 空值：用关键字NULL表示．如果变量声明但是没有赋值就是这个类型<br />
+  5． 未定义：用关键字undefined表示，如果变量未声明则就是未定义类型<br />
+  6． 数组：用new Array( )声明的就是数据(也可以称之为一个数组对象)<br />
+  7． 对象：{ }使用一对花括号声明的就是一个对象</p>
+
+<p>js的常用函数<br />
+    parseInt()：将字符串转化为数值型（整型）要转换为数字的字符串）<br />
+    parseFloat()：将字符串转化为数值型(浮点型)<br />
+    isNaN : 如果值是 NaN， 那么 isNaN 函数返回 true ，否则返回 false 。 使用这个函数的典型情况是检查parseInt 和 parseFloat 方法的返回值。</p>
+
+<p>运用通过Id找对象</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>    格式：document.getElementById(‘元素的id名称’)
+     例如：
+    &lt;input type=’text’ id=’username’  value=’zhangsan’&gt;
+    用js获取到文本框中的zhangsan
+    &lt;script&gt;
+    //通过id找到文本框的对象
+    Var name=document.getElementById(“username”);
+    //对象名.属性名来得到zhangsan的值
+    Alert(name.value)
+    &lt;/script&gt;
+    例如：
+    &lt;p id=’content’&gt;aaaaaaaaaaaaaa&lt;/p&gt;
+    用js获取到p标签间的值
+    &lt;script&gt;
+    //通过id找到p标签的对象
+    Var a=document.getElementById(“content”);
+    //对象名.属性名    来得到p标签的值
+    Alert(a.innerHTML)
+    &lt;/script&gt;
+</code></pre>
+</div>
+
+<p>javascript中的分支结构<br />
+  if语句<br />
+  if….else语句<br />
+  if…else if..else 语句<br />
+  switch….case 语句<br />
+ Javascript中的循环结构<br />
+  for循环语句<br />
+  while循环语句<br />
+  do…..while循环语句<br />
+  break和continue的使用</p>
+
+<p>Javascript中的常用事件<br />
+  鼠标事件（onclick、onmouseover、onmouseout、onmousemove）<br />
+  键盘事件（onkeydown、onkeyup）<br />
+  表单事件（onblur、onsubmit、onchange）</p>
+
+<p>常用正则表达式举例：<br />
+    //用户名由6-18位的字母数字下划线组成，不能由数字开头<br />
+    var r_name=/^[a-z_]\w{5,17}$/i<br />
+    //密码长度不能少于六位<br />
+    var r_pwd=/^\w{6,}$/<br />
+    //所有的通用邮箱地址<br />
+    var r_eamil=/^\w+@\w+(.)\w+$/<br />
+    //匹配一个QQ邮箱地址<br />
+    //861745122@qq.com<br />
+    var r_qq_email=/^\d{5,}@qq(.)com$/<br />
+    //匹配一个163的邮箱地址<br />
+    var r_163_email=/^\w+@163(.)com$/<br />
+    //匹配一个后缀名可能是.com|.net|.cn|.edu<br />
+    var email=/^\w+@\w+(.)com|net|cn|edu$/<br />
+    //要求输入有效的年龄段<br />
+    var r_age=/^\d{1,2}$/<br />
+    //if(age&gt;=18&amp;&amp;age&lt;=100)<br />
+    //验证手机号:11位  13 15 18开头<br />
+    var r_tel=/^1[3,5,8]\d{9}$/<br />
+    //验证身份证号  18位或者17位加一个X<br />
+    var r_s=/^\d{18}|\d{17}x$/i<br />
+    //验证中文<br />
+    var reg=/^[\u4e00-\u9fa5]{2,17}$/<br />
+    //php中文<br />
+    $reg = “/^[\x{4e00}-\x{9fa5}]$/u”</p>
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                                <h5 style="display: inline;">Tags:</h5>
+                                
+                                    <button class="btn btn-white btn-xs" type="button">epel</button>
+                                
+                        </div>
+                        <div class="col-md-6">
+                            <div class="small text-right">
+                                <h5>Stats:</h5>
+                                <div> 
+                                
+                                
+                                <i class="fa fa-comments-o"> </i> <span class='disqus-comment-count' data-disqus-url="http://www.ltybr.com//php/2014/05/16/phptwomo.html">0</span> comments
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- donate -->
+                            
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+    Donate
+</button>
+<div class="modal inmodal" id="myModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content animated flipInY">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">Donate Me</h4>
+                <small class="font-bold">Thanks for your support!</small>
+            </div>
+            <div class="modal-body">
+                <div class="tabbable" id="tabs-960227">
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#panel-405278" data-toggle="tab">Alipay</a>
+                        </li>
+                        <li>
+                            <a href="#panel-874705" data-toggle="tab">Wechat</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="panel-405278">
+                            <div class="text-center">
+                                <img src="/static/img/pay/alipay.png"" height="250" width="250">
+                            </div>    
+                        </div>
+                        <div class="tab-pane" id="panel-874705">
+                            <div class="text-center">
+                                <img src="/static/img/pay/wechat.png"" height="250" width="250">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+                            
+                            <br>
+                            <!-- share -->
+                            
+                                <h2>Share:</h2>
+
+<div class="bshare-custom">
+	<a title="分享到微信" class="bshare-weixin"></a>
+	<a title="分享到QQ空间" class="bshare-qzone"></a>
+	<a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+	<a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a>
+</div>
+<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=513f778e-a8f7-4c20-9ec2-d29cc2328d75&amp;pophcol=1&amp;lang=zh"></script>
+<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+                            
+                            <br>
+                            <!-- comment -->
+                            
+
+
+<div id="disqus_thread"></div>
+<script>
+/** * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS. * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */
+	/*
+	var disqus_config = function () { this.page.url = PAGE_URL;
+	// Replace PAGE_URL with your page's canonical URL variable this.page.identifier = PAGE_IDENTIFIER;
+	// Replace PAGE_IDENTIFIER with your page's unique identifier variable };
+	*/
+	(function() { // DON'T EDIT BELOW THIS LINE
+			var d = document, s = d.createElement('script');
+			s.src = '//jalpc.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+		})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+	
+	    <script src="/static/js/scroll.js"></script>
+
+<!-- Baidu analytics -->
+
+
+<!-- Google analytics -->
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-73784599-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+
+
+  <script type="text/javascript">
+    var disqusShortName = "jalpc";
+
+    var disqusPublicKey = "tj2MPaNlHMONwTH5bGDNSXyaBpW7q282MeUzh5CwcjJerNhK8Kxk3aWo7IckzTX7";
+
+    var urlArray = [];
+    $('.disqus-comment-count').each(function () {
+      var url = $(this).attr('data-disqus-url');
+      urlArray.push('link:' + url);
+    });
+    $.ajax({
+      type: 'GET',
+      url: "https://disqus.com/api/3.0/threads/set.jsonp",
+      data: { api_key: disqusPublicKey, forum : disqusShortName, thread : urlArray },
+      cache: false,
+      dataType: "jsonp",
+      success: function (result) {
+        for (var i in result.response) {
+          var count = result.response[i].posts;
+          if ( count ) {
+            $('.disqus-comment-count[data-disqus-url="' + result.response[i].link + '"]').html(count);
+          }
+        }
+      }
+    });
+</script>
+
+
+
+
+<script async src="/static/js/count_page.js"></script>
+
+	
+
+</body>
+</html>
